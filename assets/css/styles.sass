@@ -1,4 +1,61 @@
 @import "bourbon";
 @import "neat";
 
+$light-blue: #01a8ec
 
+body
+.wrapper
+	width: 960px
+	margin: 0 auto
+.flex
+	display: flex
+.order
+	background: $light-blue
+	border-radius: 21px
+	box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -5px 0 rgba(3, 128, 179, 0.78)
+	font-size: 16px
+	font-weight: 400
+	padding: 14px 16px 16px 16px
+	color: #fff
+
+
+header
+	nav
+		background: #1b5bbb
+		height: 50px
+		ul
+			height: 50px
+			justify-content: space-between
+			li
+				margin: auto 0
+				a
+					color: #fff
+					&:active, &:hover, &:focus
+						color: #fff
+	.header
+		background: url('/assets/img/header-bg.png')
+		height: 136px
+		background-position: 50% 100%
+		.wrapper
+			height: 136px
+			.logo
+				margin: auto auto auto 0
+				p
+					font-family: "RobotoRegular"
+					font-size: 16px
+					text-transform: uppercase
+					color: $light-blue
+					margin: 0
+			.contact
+				margin: auto 0 auto 240px
+				span
+					color: $light-blue
+					display: block
+				.phone 
+					font-size: 30px
+					text-align: right
+				.email
+					font-size: 16px
+					text-align: right
+			.block-order
+				margin: auto 0 auto auto

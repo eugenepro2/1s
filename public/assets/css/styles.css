@@ -3,3 +3,60 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit; }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto; }
+
+.flex {
+  display: flex; }
+
+.order {
+  background: #01a8ec;
+  border-radius: 21px;
+  box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -5px 0 rgba(3, 128, 179, 0.78);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px 16px 16px 16px;
+  color: #fff; }
+
+header nav {
+  background: #1b5bbb;
+  height: 50px; }
+  header nav ul {
+    height: 50px;
+    justify-content: space-between; }
+    header nav ul li {
+      margin: auto 0; }
+      header nav ul li a {
+        color: #fff; }
+        header nav ul li a:active, header nav ul li a:hover, header nav ul li a:focus {
+          color: #fff; }
+
+header .header {
+  background: url("/assets/img/header-bg.png");
+  height: 136px;
+  background-position: 50% 100%; }
+  header .header .wrapper {
+    height: 136px; }
+    header .header .wrapper .logo {
+      margin: auto auto auto 0; }
+      header .header .wrapper .logo p {
+        font-family: "RobotoRegular";
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #01a8ec;
+        margin: 0; }
+    header .header .wrapper .contact {
+      margin: auto 0 auto 240px; }
+      header .header .wrapper .contact span {
+        color: #01a8ec;
+        display: block; }
+      header .header .wrapper .contact .phone {
+        font-size: 30px;
+        text-align: right; }
+      header .header .wrapper .contact .email {
+        font-size: 16px;
+        text-align: right; }
+    header .header .wrapper .block-order {
+      margin: auto 0 auto auto; }

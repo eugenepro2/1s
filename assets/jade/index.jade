@@ -6,80 +6,110 @@ html(lang="ru")
 		title 1s
 		link(rel="stylesheet", href="assets/css/reset.css")
 		link(rel="stylesheet", href="assets/css/styles.css")
+		link(rel="stylesheet", href="assets/css/font.css")
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
 	body
 		header
 			nav
+				.wrapper
+					ul.flex
+						li
+							a(href="#") Главная
+						li
+							a(href="#") Услуги
+						li
+							a(href="#") Гарантии
+						li
+							a(href="#") Схема работы
+						li
+							a(href="#") Отзывы
+						li 
+							a(href="#") О компании
+						li
+							a(href="#") Сертификаты 
+						li
+							a(href="#") FAQ
+						li
+							a(href="#") Контакты
 			.header
-				.logo
-					img
-			.contact
-				span.phone 8 800 250 73-88
-				spna.email admin@yandex.ru
-			a.order Заказать звонок
+				.wrapper.flex
+					.logo
+						img(src="assets/img/logo.png", alt="Logo")
+						p совершенство вашего бизнеса
+					.contact
+						span.phone 8 800 250 73-88
+						span.email info@vivat-iq.ru
+					div.block-order
+						a(href="#").order Заказать звонок
 		section.slider
-			h1 Профессиональное внедрение и сопровождение
-			ul
-				li От 1 пользователя до крупного предприятия
-				li Закрепленный специалист
-				li Бесплатные консультации
-				li Поддержка 24/7
+			.wrapper
+				h1 Профессиональное внедрение и сопровождение
+				ul
+					li От 1 пользователя до крупного предприятия
+					li Закрепленный специалист
+					li Бесплатные консультации
+					li Поддержка 24/7
 		section.consultation
-			form
-				h2 Заполните заявку
-				p и получите экспресс-аудит Вашей задачи с 3 вариантами решения
-				.flex
-					input(type="text")
-					input(type="text")
-					input(type="button")
+			.wrapper
+				form
+					h2 Заполните заявку
+					p и получите экспресс-аудит Вашей задачи с 3 вариантами решения
+					.flex
+						input(type="text")
+						input(type="text")
+						input(type="submit" placeholder="Заказать консультацию")
 		section.conter
-			.block
-				img(src="", alt="")
-				p Опыт работы с 1С 15 лет
-			.block
-				img(src="", alt="")
-				p Лидеры по Самарской области в 1С
-			.block
-				img(src="", alt="")
-				p Более 300 благодарных клиентов
-			.block
-				img(src="", alt="")
-				p Гарантия выполнения работ в срок
-		section.introduction
-			h1 Внедрям 1С
-			.flex
+			.wrapper
 				.block
-					h2 Производство
-					a.order Подробнее
+					img(src="", alt="")
+					p Опыт работы с 1С 15 лет
 				.block
-					h2 Малое предприятие
-					a.order Подробнее
-			.flex
+					img(src="", alt="")
+					p Лидеры по Самарской области в 1С
 				.block
-					h2 Бухгалтерия
-					a.order Подробнее
+					img(src="", alt="")
+					p Более 300 благодарных клиентов
 				.block
-					h2 Торговля
-					a.order Подробнее
-				.block
-					h2 Отраслевые решения
-					a.order Подробнее
-		section.guarantee
-			h1 Мы гарантируем
-			.flex
-				.block
-					img
+					img(src="", alt="")
 					p Гарантия выполнения работ в срок
-				.block
-					img
-					p 1 год бесплатного сервисного обслуживания
-				.block
-					img
-					p 3 месяца бесплатного сопровождения при покупке нового продукта
+		section.introduction
+			.wrapper
+				h1 Внедрям 1С
+				.flex
+					.block
+						h2 Производство
+						a.order Подробнее
+					.block
+						h2 Малое предприятие
+						a.order Подробнее
+				.flex
+					.block
+						h2 Бухгалтерия
+						a.order Подробнее
+					.block
+						h2 Торговля
+						a.order Подробнее
+					.block
+						h2 Отраслевые решения
+						a.order Подробнее
+		section.guarantee
+			.wrapper
+				h1 Мы гарантируем
+				.flex
+					.block
+						img
+						p Гарантия выполнения работ в срок
+					.block
+						img
+						p 1 год бесплатного сервисного обслуживания
+					.block
+						img
+						p 3 месяца бесплатного сопровождения при покупке нового продукта
 		section.accompaniment
-			.flex
+			.wrapper
+				.flex
 				.block
 					img
 					h3 Долгое ожидание
@@ -107,12 +137,169 @@ html(lang="ru")
 				.block
 					img
 					h3 Ограниченный функционал
-					p 
+					p Чтобы выставить счет и/или отправить закрывающие документы приходится терять время на поездку в офис или ожидание понедельника.
 				.block
 					img
-					h3
-					p 
-				
+					h3 Устаревшая база
+					p Компании требуется обновление программ и дополнительный функционал под потребности бизнеса.
+		section.specialist
+			.wrapper
+				h1 Выберите специалиста для своего бизнеса!
+		section.rates
+			.wrapper
+				h1 Большой выбор тарифов сопровождениедля каждого пользователя
+				.white-block
+					table
+				.question
+					div
+						h3 Незнаете какой выбрать тариф?
+						p Получите бесплатную консультацию — заполните заявку и мы перезвоним вам!
+					a.order Оставить заявку
+		section.why-us
+			.wrapper
+				h1 Почему клиенты выбираютнас в течении 15 лет?
+				.block
+					img
+					h4 Понимаем Вас с полуслова
+					p Богатый опыт работы с 1С позволяет нам предугадывать ваши задачи и решать их быстрее и эффективнее
+				.block
+					img
+					h4 Работа на результат
+					p	С нами «сырая программа» станет незаменимым инструментом в Вашей работе!
+				.block
+					img
+					h4 Гарантия конфиденциальности данных
+					p	Сохранность данных под надежной защитой
+				.block
+					img
+					h4 Всегда с Вами на связи
+					p	24/7 мы с вами на связи, оперативно решаем возникающие вопросы
+				.block
+					img
+					h4 1С на переделе возможностей
+					p	Поможем освоить 100% функционал программ 1С
+				.block
+					img
+					h4 Защита от налоговых рисков
+					p	Управление налоговыми рисками и комплексная оценка благонадежности контрагентов
+		section.free-consultation
+			.wrapper
+				h1 Бесплатная консультация
+				p Не знаете что выбрать? Спросите Светлану — она с радостью вам поможет подобрать 1С под ваши нужды. Оставьте здесь свои контакты, и ждите звонка.
+				form
+					input(type="text")
+					input(type="text")
+					input(type="submit" placeholder="Заказать консультацию")
+					span * гарантия конфиденциальности данных
+		section.how-working
+			.wrapper
+				h1 Как мы работаем
+		section.choose
+			.wrapper
+				h1 Выбирайте надежную компанию
+				div.flex
+					.white-cicle
+						span более
+						span 62%
+					p наших клиентов рекомендовали нас своим друзьям и знакомым, партнерам и клиентам.
+		section.portfolio
+			.wrapper
+				h1 Наши работы
+				p За 15 лет работы нами проделана огромная работа! Выполнено свыше 300 проектов по России. Выполняли работы от простых внедрений до автоматизации крупных торговых/производственных предприятий. Наши клиенты высоко оценивают уровень работ и оказываемый сервис.
+		section.certificate
+			.wrapper
+				h1 Сертифицированный Сервисный партнер фирмы «1С»!
+				p Для получения качественного сопровождения в Самарской области фирма «1С» рекомендует обращаться в компанию «Виват Интеллект». Компании, обладающие статусом «Сертифициро-ванный Сервисный партнер (Сервис-партнер) (СП) «1С»», являются ведущими партнерами фирмы «1С» в области информационно-технологи-ческого сопровождения 1C и рекомендуются фирмой «1С» при выборе надежного партнера в регионе.<span>Команда разработки 1С</span>
+		section.review
+			.wrapper
+				.block
+					p Создавая свою компанию ВИВАТ ИНТЕЛЛЕКТ в 2008 году, я стремился к формированию круга единомышленников, объединенных одной идеей - разработкой и сопровождением 1С в самых комфортных для специалиста и клиента условиях. 
+					p Это позволяет совместно развиваться и получать заряд энергии от победы в результате каждой задачи, эйфории от удовлетворения результатом клиента для следующих побед. Каждая победа должна быть вознаграждена!
+		section.our-team
+		section.faq
+			.wrapper
+				h1 F.A.Q
+				#accordion.panel-group(role='tablist', aria-multiselectable='true')
+				.panel.panel-default
+					#headingOne.panel-heading(role='tab')
+						h4.panel-title
+							a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+								| Ваши услуги стоят дорого?
+					#collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+						.panel-body
+							| Да, наши услуги стоят дороже, чем заказывать у Фрилансера. Но наша ценность заключается в том, что мы закрываем полный спектр задач, которые возникают у клиентов. На оказываемый спектр услуг мы даем гарантию 1 год . <a href="#">Заполните заявку</a> и мы поможем подобрать для вас оптимальное решение.
+				.panel.panel-default
+					#headingThree.panel-heading(role='tab')
+						h4.panel-title
+							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+								| Есть готовые решения для моего(нашего) бизнеса?
+					#collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+						.panel-body
+							| 
+				.panel.panel-default
+					#headingFour.panel-heading(role='tab')
+						h4.panel-title
+							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+								| Сколько времени займет решение моих задач?
+					#collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+						.panel-body
+							| 
+				.panel.panel-default
+					#headingFive.panel-heading(role='tab')
+						h4.panel-title
+							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+								| Я пользуюсь услугами своего специалиста фрилансера, зачем мне работать с вами?
+					#collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+						.panel-body
+							| 
+				.panel.panel-default
+					#headingSix.panel-heading(role='tab')
+						h4.panel-title
+							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
+								| Кому мы не подходим
+					#collapseSix.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+						.panel-body
+							| 
+		section.contact
+			.wrapper
+				h2 Контактные информация
+				p ООО «ИНТЭС групп»
+				.flex
+					p Адрес:			
+					p Тольятти, улица Спортивная, д. 6, подъезд 2/2, 5 этаж
+				.flex
+					p Режим работы:	
+					p с 9:00 до 18:00
+				.flex
+					p Телефоны:
+					p +7 (8482) 55-73-98
+				.flex
+					p E-mail:			
+					p info@vivat-iq.ru
+		section.question
+			.wrapper
+				.flex
+					div
+						h1 Остались вопросы?
+						p Оставьте заявку и в течении 15 минут мы ответим на все ваши вопросы
+						span * гарантия конфиденциальности данных
+					form
+						input(type="text" placeholder="Имя")
+						input(type="text" placeholder="Email")
+						input(type="text" placeholder="Телефон")
+						input(type="file" placeholder="Файл")
+						textarea(placeholder="Сообщение")
+						input(type="submit" placeholder="Получить")
+		footer
+			.wrapper
+				div
+					p © 2008-2016 ООО «ВИВАТ ИНТЕЛЛЕКТ»
+					a(href="#") Скачать реквизиты
+				div
+					p Вопросы и пожеланияотправляйте на info@vivat-iq.ru
+				div
+					p Компания разработчик 
+					a(href="http://lidkom.ru/") Lidkom.ru
 				
 
 
