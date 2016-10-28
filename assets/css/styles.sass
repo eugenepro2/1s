@@ -1,6 +1,6 @@
 @import "bourbon";
 @import "neat";
-
+$blue: #1b5bbb
 $light-blue: #01a8ec
 
 body
@@ -17,11 +17,15 @@ body
 	font-weight: 400
 	padding: 14px 16px 16px 16px
 	color: #fff
-
+	font-family: "GothamProRegular"
+h1
+	font-size: 50px
+h2
+	font-size: 36px
 
 header
 	nav
-		background: #1b5bbb
+		background: $blue
 		height: 50px
 		ul
 			height: 50px
@@ -30,15 +34,17 @@ header
 				margin: auto 0
 				a
 					color: #fff
+					font-family: "RobotoRegular"
+					font-size: 16px
 					&:active, &:hover, &:focus
 						color: #fff
-	.header
+	div.header
 		background: url('/assets/img/header-bg.png')
 		height: 136px
 		background-position: 50% 100%
-		.wrapper
+		div.wrapper
 			height: 136px
-			.logo
+			div.logo
 				margin: auto auto auto 0
 				p
 					font-family: "RobotoRegular"
@@ -46,16 +52,84 @@ header
 					text-transform: uppercase
 					color: $light-blue
 					margin: 0
-			.contact
+			div.contact
 				margin: auto 0 auto 240px
 				span
+					font-family: "RobotoRegular"
 					color: $light-blue
 					display: block
-				.phone 
+				span.phone 
 					font-size: 30px
 					text-align: right
-				.email
+				span.email
 					font-size: 16px
 					text-align: right
-			.block-order
+			div.block-order
 				margin: auto 0 auto auto
+section.slider
+	background: url('/assets/img/slider-bg.png') no-repeat
+	height: 600px
+	margin-top: -62px
+	background-position: 46% 0%
+	position: relative
+	h2
+		color: $blue
+		padding-top: 100px
+		padding-left: 90px
+		img
+			position: relative
+			bottom: 5px
+	ul
+		list-style-image: url('/assets/img/circle.png')
+		position: relative
+		padding-left: 90px
+		left: 22px
+		li
+			color: $blue
+			font-family: "RobotoRegular"
+			font-size: 18px
+section.consultation
+	background: #fff
+	width: 700px
+	height: 190px
+	margin: auto
+	margin-top: -204px
+	border-radius: 2px
+	position: relative
+	form
+		flex-direction: column
+		width: 700px
+		h2, p
+			text-align: center
+			font-family: "GothamProBold"
+		h2
+			font-size: 28px
+		p
+			font-size: 14px
+		div.flex
+			width: 580px
+			margin: auto
+		input
+			background-color: rgba(255, 255, 255, 0.5)
+			border: 1px solid #999
+			border-radius: 10px
+			margin: auto
+			width: 160px
+			padding: 10px
+		input[type="submit"]
+			background: $light-blue
+			border-radius: 21px
+			box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -5px 0 rgba(3, 128, 179, 0.78)
+			font-size: 16px
+			font-weight: 400
+			padding: 10px 16px 12px 16px
+			color: #fff
+			font-family: "GothamProRegular"
+			width: 220px
+section.counter
+	background: url('/assets/img/counter.png') no-repeat
+	height: 450px
+	background-position: 50% 100%
+	margin-top: -78px
+	.wrapper
+		margin: auto
