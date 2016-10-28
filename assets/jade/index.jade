@@ -320,44 +320,52 @@ html(lang="ru")
 					p Создавая свою компанию ВИВАТ ИНТЕЛЛЕКТ в 2008 году, я стремился к формированию круга единомышленников, объединенных одной идеей - разработкой и сопровождением 1С в самых комфортных для специалиста и клиента условиях. 
 					p Это позволяет совместно развиваться и получать заряд энергии от победы в результате каждой задачи, эйфории от удовлетворения результатом клиента для следующих побед. Каждая победа должна быть вознаграждена!
 		section.our-team
+			h1 Наша команда
+			#carousel.carousel.slide.carousel-fade(data-ride='carousel')
+				.carousel-inner
+					.active.item
+						img(src="assets/img/slider.png", alt="")
+					.item
+						img(src="assets/img/slider.png", alt="")
+					.item
+						img(src="assets/img/slider.png", alt="")
+				a.carousel-control.left(href='#carousel', data-slide='prev')
+					img(src="assets/img/left-arrow.svg", alt="")
+				a.carousel-control.right(href='#carousel', data-slide='next')
+					img(src="assets/img/right-arrow.svg", alt="")
 		section.faq
 			.wrapper
 				h1 F.A.Q
 				#accordion.panel-group(role='tablist', aria-multiselectable='true')
-				.panel.panel-default
-					#headingOne.panel-heading(role='tab')
+					#headingOne(role='tab')
 						h4.panel-title
 							a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
 								| Ваши услуги стоят дорого?
-					#collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+					#collapseOne(role='tabpanel', aria-labelledby='headingOne')
 						.panel-body
 							| Да, наши услуги стоят дороже, чем заказывать у Фрилансера. Но наша ценность заключается в том, что мы закрываем полный спектр задач, которые возникают у клиентов. На оказываемый спектр услуг мы даем гарантию 1 год . <a href="#">Заполните заявку</a> и мы поможем подобрать для вас оптимальное решение.
-				.panel.panel-default
-					#headingThree.panel-heading(role='tab')
+					#headingThree(role='tab')
 						h4.panel-title
 							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
 								| Есть готовые решения для моего(нашего) бизнеса?
 					#collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
 						.panel-body
 							| 
-				.panel.panel-default
-					#headingFour.panel-heading(role='tab')
+					#headingFour(role='tab')
 						h4.panel-title
 							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
 								| Сколько времени займет решение моих задач?
 					#collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
 						.panel-body
 							| 
-				.panel.panel-default
-					#headingFive.panel-heading(role='tab')
+					#headingFive(role='tab')
 						h4.panel-title
 							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
 								| Я пользуюсь услугами своего специалиста фрилансера, зачем мне работать с вами?
 					#collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
 						.panel-body
 							| 
-				.panel.panel-default
-					#headingSix.panel-heading(role='tab')
+					#headingSix(role='tab')
 						h4.panel-title
 							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
 								| Кому мы не подходим
@@ -367,41 +375,46 @@ html(lang="ru")
 		section.contact
 			.wrapper
 				h2 Контактные информация
-				p ООО «ИНТЭС групп»
-				.flex
+				p.ooo ООО «ИНТЭС групп»
+				.flex.adress
 					p Адрес:			
-					p Тольятти, улица Спортивная, д. 6, подъезд 2/2, 5 этаж
-				.flex
+					p Тольятти, улица Спортивная,<br> д. 6, подъезд 2/2, 5 этаж
+				.flex.work
 					p Режим работы:	
 					p с 9:00 до 18:00
-				.flex
+				.flex.phone
 					p Телефоны:
 					p +7 (8482) 55-73-98
-				.flex
+				.flex.email
 					p E-mail:			
-					p info@vivat-iq.ru
+					p
+						a(href="#") info@vivat-iq.ru
 		section.question
 			.wrapper
 				.flex
 					div
-						h1 Остались вопросы?
+						h1 Остались<br> вопросы?
 						p Оставьте заявку и в течении 15 минут мы ответим на все ваши вопросы
-						span * гарантия конфиденциальности данных
+						span.guarantee * гарантия конфиденциальности данных
+						img.line(src="assets/img/line.png", alt="")
 					form
 						input(type="text" placeholder="Имя")
 						input(type="text" placeholder="Email")
 						input(type="text" placeholder="Телефон")
+						button(type="button")
+						a.button 
+							span обзор
 						input(type="file" placeholder="Файл")
 						textarea(placeholder="Сообщение")
 						input(type="submit" placeholder="Получить")
 		footer
-			.wrapper
-				div
+			.wrapper.flex
+				div.copyright
 					p © 2008-2016 ООО «ВИВАТ ИНТЕЛЛЕКТ»
 					a(href="#") Скачать реквизиты
-				div
-					p Вопросы и пожеланияотправляйте на info@vivat-iq.ru
-				div
+				div.email
+					p Вопросы и пожелания<br>отправляйте на <a href="#">info@vivat-iq.ru</a>
+				div.company
 					p Компания разработчик 
 					a(href="http://lidkom.ru/") Lidkom.ru
 				
