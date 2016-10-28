@@ -250,6 +250,98 @@ section.accompaniment {
         font-family: "RobotoRegular";
         line-height: 1.2; }
 
+section.specialist {
+  height: 820px; }
+  section.specialist .wrapper {
+    flex-direction: column; }
+    section.specialist .wrapper h1 {
+      font-size: 40px;
+      text-align: center;
+      padding: 50px 0; }
+    section.specialist .wrapper .carousel {
+      height: 500px; }
+    section.specialist .wrapper .block {
+      width: 940px;
+      height: 480px;
+      border: 2px solid #1b5bbb;
+      margin: auto; }
+      section.specialist .wrapper .block .block-item {
+        width: 50%; }
+      section.specialist .wrapper .block h2 {
+        font-size: 24px;
+        font-family: "GothamProBold";
+        padding: 40px; }
+      section.specialist .wrapper .block p {
+        padding: 5px 40px;
+        font-family: "GothamProBold"; }
+      section.specialist .wrapper .block span {
+        font-family: "GothamProRegular"; }
+      section.specialist .wrapper .block .photo {
+        flex-direction: column;
+        background: #e6e6e6; }
+        section.specialist .wrapper .block .photo img {
+          margin: auto; }
+        section.specialist .wrapper .block .photo .flex {
+          margin: auto;
+          position: relative;
+          bottom: 40px; }
+          section.specialist .wrapper .block .photo .flex a {
+            margin: auto; }
+    section.specialist .wrapper .block-first:after {
+      content: "";
+      position: absolute;
+      left: 46px;
+      bottom: -10px;
+      border: 10px solid transparent;
+      border-top: 20px solid #1b5bbb; }
+    section.specialist .wrapper .block-second:after {
+      content: "";
+      position: absolute;
+      left: 170px;
+      bottom: -10px;
+      border: 10px solid transparent;
+      border-top: 20px solid #1b5bbb; }
+    section.specialist .wrapper .block-third:after {
+      content: "";
+      position: absolute;
+      left: 290px;
+      bottom: -10px;
+      border: 10px solid transparent;
+      border-top: 20px solid #1b5bbb; }
+    section.specialist .wrapper .block-fourth:after {
+      content: "";
+      position: absolute;
+      left: 410px;
+      bottom: -10px;
+      border: 10px solid transparent;
+      border-top: 20px solid #1b5bbb; }
+    section.specialist .wrapper .block-fifth:after {
+      content: "";
+      position: absolute;
+      left: 527px;
+      bottom: -10px;
+      border: 10px solid transparent;
+      border-top: 20px solid #1b5bbb; }
+    section.specialist .wrapper .block-sixth:after {
+      content: "";
+      position: absolute;
+      left: 647px;
+      bottom: -10px;
+      border: 10px solid transparent;
+      border-top: 20px solid #1b5bbb; }
+    section.specialist .wrapper .block-seventh:after {
+      content: "";
+      position: absolute;
+      left: 768px;
+      bottom: -10px;
+      border: 10px solid transparent;
+      border-top: 20px solid #1b5bbb; }
+    section.specialist .wrapper ul {
+      z-index: 1;
+      position: relative;
+      justify-content: space-around;
+      padding: 40px 0; }
+
 section.rates {
   background: #e6e6e6; }
   section.rates h1 {
@@ -543,6 +635,8 @@ section.portfolio {
       font-family: "RobotoMedium";
       font-size: 16px;
       padding-left: 30px; }
+    section.portfolio footer div {
+      margin: auto 0; }
 
 section.certificate {
   background: url("/assets/img/certificate-bg.png");
@@ -811,3 +905,10 @@ footer {
     top: 7px;
     right: 0px;
     width: 35px; }
+
+.carousel-team .carousel-inner {
+  height: 100%;
+  width: 100% !important;
+  margin: auto; }
+  .carousel-team .carousel-inner .item {
+    height: 100%; }

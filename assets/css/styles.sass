@@ -24,7 +24,6 @@ body
 h1
 	font-size: 50px
 	font-family: $gothambold
-
 h2
 	font-size: 36px
 
@@ -244,6 +243,96 @@ section.accompaniment
 				font-family: $roboto
 				line-height: 1.2
 section.specialist
+	height: 820px
+	.wrapper
+		flex-direction: column
+		h1
+			font-size: 40px
+			text-align: center
+			padding: 50px 0
+		.carousel
+			height: 500px
+		.block
+			width: 940px
+			height: 480px
+			border: 2px solid $blue
+			margin: auto 
+			.block-item
+				width: 50%
+			h2
+				font-size: 24px
+				font-family: $gothambold
+				padding: 40px
+			p
+				padding: 5px 40px
+				font-family: $gothambold
+			span
+				font-family: $gothamregular
+			.photo
+				flex-direction: column
+				background: #e6e6e6
+				img
+					margin: auto
+				.flex
+					margin: auto
+					position: relative
+					bottom: 40px
+					a
+						margin: auto
+		.block-first:after
+			content: ""
+			position: absolute
+			left: 46px
+			bottom: -10px
+			border: 10px solid transparent
+			border-top: 20px solid $blue
+		.block-second:after
+			content: ""
+			position: absolute
+			left: 170px
+			bottom: -10px
+			border: 10px solid transparent
+			border-top: 20px solid $blue
+		.block-third:after
+			content: ""
+			position: absolute
+			left: 290px
+			bottom: -10px
+			border: 10px solid transparent
+			border-top: 20px solid $blue
+		.block-fourth:after
+			content: ""
+			position: absolute
+			left: 410px
+			bottom: -10px
+			border: 10px solid transparent
+			border-top: 20px solid $blue
+		.block-fifth:after
+			content: ""
+			position: absolute
+			left: 527px
+			bottom: -10px
+			border: 10px solid transparent
+			border-top: 20px solid $blue
+		.block-sixth:after
+			content: ""
+			position: absolute
+			left: 647px
+			bottom: -10px
+			border: 10px solid transparent
+			border-top: 20px solid $blue
+		.block-seventh:after
+			content: ""
+			position: absolute
+			left: 768px
+			bottom: -10px
+			border: 10px solid transparent
+			border-top: 20px solid $blue
+		ul
+			z-index: 1
+			position: relative
+			justify-content: space-around
+			padding: 40px 0
 section.rates
 	background: #e6e6e6 
 	h1
@@ -540,6 +629,8 @@ section.portfolio
 			font-family: "RobotoMedium"
 			font-size: 16px
 			padding-left: 30px
+		div
+			margin: auto 0
 section.certificate
 	background: url('/assets/img/certificate-bg.png')
 	height: 490px
@@ -798,3 +889,11 @@ footer
 		top: 7px
 		right: 0px
 		width: 35px
+
+.carousel-team
+	.carousel-inner
+		height: 100%
+		width: 100% !important
+		margin: auto
+		.item
+			height: 100%
