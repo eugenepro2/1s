@@ -249,3 +249,67 @@ section.accompaniment {
       section.accompaniment .row .block p {
         font-family: "RobotoRegular";
         line-height: 1.2; }
+
+section.rates {
+  background: #e6e6e6; }
+  section.rates h1 {
+    text-align: center;
+    padding: 70px 0;
+    font-size: 36px; }
+  section.rates .white-block {
+    background: #fff;
+    width: 960px;
+    height: 270px;
+    box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3);
+    border-radius: 2px; }
+    section.rates .white-block table {
+      width: 940px;
+      margin: auto; }
+      section.rates .white-block table tr th {
+        height: 45px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: "GothamProBold"; }
+      section.rates .white-block table tr th.blue {
+        color: #1b5bbb; }
+      section.rates .white-block table tr th {
+        border-bottom: 2px solid #ccccc2; }
+      section.rates .white-block table tr th:nth-child(2n), section.rates .white-block table tr th:nth-child(3) {
+        border-left: 2px solid #cccccc; }
+      section.rates .white-block table tr:first-child {
+        background: #fff; }
+      section.rates .white-block table tr:nth-child(2n) {
+        background: #ededed; }
+      section.rates .white-block table tr:nth-child(3) {
+        background: #f2f2f2; }
+  section.rates .question {
+    padding: 50px 0; }
+    section.rates .question div {
+      margin: auto; }
+      section.rates .question div h3, section.rates .question div p {
+        font-family: "GothamProBold"; }
+    section.rates .question a.order {
+      margin: auto; }
+
+section.why-us {
+  background: url("/assets/img/why-us-bg.png") no-repeat;
+  height: 700px;
+  background-position: 50% 0%; }
+  section.why-us h1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    padding: 30px; }
+  section.why-us .row {
+    flex-wrap: wrap; }
+    section.why-us .row .block {
+      width: 33%; }
+      section.why-us .row .block .img {
+        height: 100px; }
+        section.why-us .row .block .img img {
+          margin: auto 0; }
+      section.why-us .row .block h4, section.why-us .row .block p {
+        font-size: 16px;
+        color: #fff; }
+      section.why-us .row .block h4 {
+        padding: 5px 0; }

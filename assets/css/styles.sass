@@ -2,6 +2,9 @@
 @import "neat";
 $blue: #1b5bbb
 $light-blue: #01a8ec
+$gothambold: "GothamProBold"
+$gothamregular: "GothamProRegular"
+$roboto: "RobotoRegular"
 
 body
 .wrapper
@@ -17,10 +20,10 @@ body
 	font-weight: 400
 	padding: 14px 16px 16px 16px
 	color: #fff
-	font-family: "GothamProRegular"
+	font-family: $gothamregular
 h1
 	font-size: 50px
-	font-family: "GothamProBold"
+	font-family: $gothambold
 
 h2
 	font-size: 36px
@@ -36,7 +39,7 @@ header
 				margin: auto 0
 				a
 					color: #fff
-					font-family: "RobotoRegular"
+					font-family: $roboto
 					font-size: 16px
 					&:active, &:hover, &:focus
 						color: #fff
@@ -49,7 +52,7 @@ header
 			div.logo
 				margin: auto auto auto 0
 				p
-					font-family: "RobotoRegular"
+					font-family: $roboto
 					font-size: 16px
 					text-transform: uppercase
 					color: $light-blue
@@ -57,7 +60,7 @@ header
 			div.contact
 				margin: auto 0 auto 240px
 				span
-					font-family: "RobotoRegular"
+					font-family: $roboto
 					color: $light-blue
 					display: block
 				span.phone 
@@ -89,7 +92,7 @@ section.slider
 		top: 20px
 		li
 			color: $blue
-			font-family: "RobotoRegular"
+			font-family: $roboto
 			font-size: 18px
 			padding-left: 5px
 			padding-top: 5px
@@ -110,7 +113,7 @@ section.consultation
 			margin: auto
 			h2, p
 				text-align: center
-				font-family: "GothamProBold"
+				font-family: $gothambold
 			h2
 				font-size: 28px
 			p
@@ -134,7 +137,7 @@ section.consultation
 				font-weight: 400
 				padding: 10px 16px 12px 16px
 				color: #fff
-				font-family: "GothamProRegular"
+				font-family: $gothamregular
 				width: 220px
 section.counter
 	background: url('/assets/img/counter-bg.png') no-repeat
@@ -155,7 +158,7 @@ section.counter
 				margin: auto
 				height: 100%
 				p
-					font-family: "GothamProBold"
+					font-family: $gothambold
 					font-size: 18px
 					text-align: center
 section.introduction
@@ -207,7 +210,7 @@ section.guarantee
 			p
 				color: #fff
 				font-size: 18px
-				font-family: "GothamProBold"
+				font-family: $gothambold
 				line-height: 1.5
 section.accompaniment
 	background: #e6e6e6
@@ -215,7 +218,7 @@ section.accompaniment
 	padding-bottom: 30px
 	h1, p
 		text-align: center
-		font-family: "GothamProBold"
+		font-family: $gothambold
 	p
 		font-size: 24px
 		padding-bottom: 20px
@@ -235,11 +238,77 @@ section.accompaniment
 				font-size: 16px
 				text-align: center
 			h3
-				font-family: "GothamProBold"
+				font-family: $gothambold
 				margin-bottom: 5px
 			p 
-				font-family: "RobotoRegular"
+				font-family: $roboto
 				line-height: 1.2
+section.specialist
+section.rates
+	background: #e6e6e6 
+	h1
+		text-align: center
+		padding: 70px 0
+		font-size: 36px
+	.white-block
+		background: #fff
+		width: 960px
+		height: 270px
+		box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3)
+		border-radius: 2px
+		table
+			width: 940px
+			margin: auto
+			tr
+				th
+					height: 45px
+					text-align: center
+					vertical-align: middle
+					font-family: $gothambold
+				th.blue
+					color: $blue
+				th
+					border-bottom: 2px solid #ccccc2
+				th:nth-child(2n), th:nth-child(3)
+					border-left: 2px solid #cccccc
+			tr:first-child
+				background: #fff
+			tr:nth-child(2n)
+				background: #ededed
+			tr:nth-child(3)
+				background: #f2f2f2
+	.question
+		padding: 50px 0
+		div
+			margin: auto
+			h3, p 
+				font-family: $gothambold
+		a.order 
+			margin: auto
 
+
+section.why-us
+	background: url('/assets/img/why-us-bg.png') no-repeat
+	height: 700px
+	background-position: 50% 0%
+	h1
+		font-size: 36px
+		color: #fff
+		text-align: center
+		padding: 30px
+	.row
+		flex-wrap: wrap
+		.block
+			width: 33%
+			.img
+				height: 100px
+				img
+					margin: auto 0
+			h4, p 
+				font-size: 16px
+				color: #fff
+			h4
+				padding: 5px 0
+				
 
 
