@@ -22,7 +22,8 @@ html {
   font-family: "GothamProRegular"; }
 
 h1 {
-  font-size: 50px; }
+  font-size: 50px;
+  font-family: "GothamProBold"; }
 
 h2 {
   font-size: 36px; }
@@ -74,7 +75,7 @@ header div.header {
 section.slider {
   background: url("/assets/img/slider-bg.png") no-repeat;
   height: 600px;
-  margin-top: -62px;
+  margin-top: -45px;
   background-position: 46% 0%;
   position: relative; }
   section.slider h2 {
@@ -83,16 +84,20 @@ section.slider {
     padding-left: 90px; }
     section.slider h2 img {
       position: relative;
-      bottom: 5px; }
+      top: 7px; }
   section.slider ul {
     list-style-image: url("/assets/img/circle.png");
     position: relative;
     padding-left: 90px;
-    left: 22px; }
+    left: 22px;
+    top: 20px; }
     section.slider ul li {
       color: #1b5bbb;
       font-family: "RobotoRegular";
-      font-size: 18px; }
+      font-size: 18px;
+      padding-left: 5px;
+      padding-top: 5px;
+      position: relative; }
 
 section.consultation {
   background: #fff;
@@ -102,41 +107,145 @@ section.consultation {
   margin-top: -204px;
   border-radius: 2px;
   position: relative; }
-  section.consultation form {
-    flex-direction: column;
-    width: 700px; }
-    section.consultation form h2, section.consultation form p {
-      text-align: center;
-      font-family: "GothamProBold"; }
-    section.consultation form h2 {
-      font-size: 28px; }
-    section.consultation form p {
-      font-size: 14px; }
-    section.consultation form div.flex {
-      width: 580px;
+  section.consultation div.wrapper {
+    width: 700px;
+    height: 190px; }
+    section.consultation div.wrapper form {
+      flex-direction: column;
       margin: auto; }
-    section.consultation form input {
-      background-color: rgba(255, 255, 255, 0.5);
-      border: 1px solid #999;
-      border-radius: 10px;
-      margin: auto;
-      width: 160px;
-      padding: 10px; }
-    section.consultation form input[type="submit"] {
-      background: #01a8ec;
-      border-radius: 21px;
-      box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -5px 0 rgba(3, 128, 179, 0.78);
-      font-size: 16px;
-      font-weight: 400;
-      padding: 10px 16px 12px 16px;
-      color: #fff;
-      font-family: "GothamProRegular";
-      width: 220px; }
+      section.consultation div.wrapper form h2, section.consultation div.wrapper form p {
+        text-align: center;
+        font-family: "GothamProBold"; }
+      section.consultation div.wrapper form h2 {
+        font-size: 28px; }
+      section.consultation div.wrapper form p {
+        font-size: 14px; }
+      section.consultation div.wrapper form div.flex {
+        width: 580px;
+        margin: auto;
+        padding: 20px 0; }
+      section.consultation div.wrapper form input {
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px solid #999;
+        border-radius: 10px;
+        margin: auto;
+        width: 160px;
+        padding: 10px; }
+      section.consultation div.wrapper form input[type="submit"] {
+        background: #01a8ec;
+        border-radius: 21px;
+        box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -5px 0 rgba(3, 128, 179, 0.78);
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 16px 12px 16px;
+        color: #fff;
+        font-family: "GothamProRegular";
+        width: 220px; }
 
 section.counter {
-  background: url("/assets/img/counter.png") no-repeat;
+  background: url("/assets/img/counter-bg.png") no-repeat;
   height: 450px;
   background-position: 50% 100%;
   margin-top: -78px; }
-  section.counter .wrapper {
+  section.counter div.wrapper {
     margin: auto; }
+    section.counter div.wrapper div.block {
+      margin: auto;
+      flex-direction: column; }
+      section.counter div.wrapper div.block div {
+        height: 150px; }
+        section.counter div.wrapper div.block div img {
+          margin: auto; }
+      section.counter div.wrapper div.block div.description {
+        width: 65%;
+        margin: auto;
+        height: 100%; }
+        section.counter div.wrapper div.block div.description p {
+          font-family: "GothamProBold";
+          font-size: 18px;
+          text-align: center; }
+
+section.introduction {
+  padding-bottom: 70px; }
+  section.introduction h1 {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px; }
+  section.introduction div.block {
+    width: 319px;
+    height: 198px;
+    margin: 1px;
+    color: #157fd9;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 100px; }
+    section.introduction div.block h2 {
+      font-size: 24px;
+      padding: 30px 0; }
+    section.introduction div.block span {
+      opacity: 0; }
+  section.introduction div.i-1 {
+    width: 640px;
+    background: url("/assets/img/introduction-1.png") no-repeat; }
+    section.introduction div.i-1 div.item {
+      margin: 25px 94px 0px auto; }
+  section.introduction div.i-2 {
+    background: url("/assets/img/introduction-2.png") no-repeat; }
+  section.introduction div.i-3 {
+    background: url("/assets/img/introduction-3.png") no-repeat; }
+  section.introduction div.i-4 {
+    background: url("/assets/img/introduction-4.png") no-repeat; }
+  section.introduction div.i-5 {
+    background: url("/assets/img/introduction-5.png") no-repeat; }
+
+section.guarantee {
+  background: url("/assets/img/guarantee-bg.png") no-repeat;
+  height: 420px;
+  background-position: 50% 50%; }
+  section.guarantee h1 {
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; }
+  section.guarantee div.block {
+    width: 33%; }
+    section.guarantee div.block div.img {
+      height: 150px; }
+      section.guarantee div.block div.img img {
+        margin: auto; }
+    section.guarantee div.block p {
+      color: #fff;
+      font-size: 18px;
+      font-family: "GothamProBold";
+      line-height: 1.5; }
+
+section.accompaniment {
+  background: #e6e6e6;
+  padding-top: 100px;
+  padding-bottom: 30px; }
+  section.accompaniment h1, section.accompaniment p {
+    text-align: center;
+    font-family: "GothamProBold"; }
+  section.accompaniment p {
+    font-size: 24px;
+    padding-bottom: 20px; }
+  section.accompaniment .row {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    section.accompaniment .row .block {
+      background: #fff;
+      width: 220px;
+      margin: 10px auto;
+      padding: 10px 5px; }
+      section.accompaniment .row .block .img {
+        height: 100px; }
+        section.accompaniment .row .block .img img {
+          margin: auto; }
+      section.accompaniment .row .block h3, section.accompaniment .row .block p {
+        font-size: 16px;
+        text-align: center; }
+      section.accompaniment .row .block h3 {
+        font-family: "GothamProBold";
+        margin-bottom: 5px; }
+      section.accompaniment .row .block p {
+        font-family: "RobotoRegular";
+        line-height: 1.2; }

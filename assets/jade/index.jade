@@ -4,10 +4,10 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		title 1s
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
 		link(rel="stylesheet", href="assets/css/reset.css")
 		link(rel="stylesheet", href="assets/css/styles.css")
 		link(rel="stylesheet", href="assets/css/font.css")
-		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
 	body
@@ -45,14 +45,14 @@ html(lang="ru")
 						a(href="#").order Заказать звонок
 		section.slider
 			.wrapper
-				h2 Профессиональное<br> внедрение и сопровождение<br><img src="assets/img/1s.png"> Преприятие
+				h2 Профессиональное<br> внедрение и сопровождение<br><img src="assets/img/1s.png"> Предприятие
 				ul
 					li От 1 пользователя до крупного предприятия
 					li Закрепленный специалист
 					li Бесплатные консультации
 					li Поддержка 24/7
 		section.consultation
-			.wrapper
+			.wrapper.flex
 				form.flex
 					h2 Заполните заявку
 					p и получите экспресс-аудит Вашей задачи с 3 вариантами решения
@@ -62,86 +62,109 @@ html(lang="ru")
 						input(type="submit" value="Заказать консультацию")
 		section.counter.flex
 			.wrapper.flex
-				.block
-					img(src="", alt="")
-					p Опыт работы с 1С 15 лет
-				.block
-					img(src="", alt="")
-					p Лидеры по Самарской области в 1С
-				.block
-					img(src="", alt="")
-					p Более 300 благодарных клиентов
-				.block
-					img(src="", alt="")
-					p Гарантия выполнения работ в срок
+				.block.flex
+					.flex
+						img(src="assets/img/experience.png", alt="Картинка с портфелем")
+					.description
+						p Опыт работы с 1С 15 лет
+				.block.flex
+					.flex
+						img(src="assets/img/leaders.png", alt="Герб")
+					.description
+						p Лидеры по Самарской области в 1С
+				.block.flex
+					.flex
+						img(src="assets/img/client.png", alt="Картинка с клиентами")
+					.description
+						p Более 300 благодарных клиентов
+				.block.flex
+					.flex
+						img(src="assets/img/hands.png", alt="Рукопажатие")
+					.description
+						p Гарантия выполнения работ в срок
 		section.introduction
 			.wrapper
 				h1 Внедрям 1С
 				.flex
-					.block
-						h2 Производство
-						a.order Подробнее
-					.block
-						h2 Малое предприятие
+					.block.i-1.flex
+						div.item
+							h2 Производство
+							div
+								a.order Подробнее
+					.block.i-2
+						h2 Малое<br>предприятие
 						a.order Подробнее
 				.flex
-					.block
-						h2 Бухгалтерия
+					.block.i-3
+						h2 Бухгалтерия<br><span>пустышка</span>
 						a.order Подробнее
-					.block
-						h2 Торговля
+					.block.i-4
+						h2 Торговля<br><span>пустышка</span>
 						a.order Подробнее
-					.block
-						h2 Отраслевые решения
+					.block.i-5
+						h2 Отраслевые<br> решения
 						a.order Подробнее
 		section.guarantee
 			.wrapper
 				h1 Мы гарантируем
 				.flex
 					.block
-						img
-						p Гарантия выполнения работ в срок
+						.img.flex
+							img(src="assets/img/guarantee-1.png", alt="")
+						p Гарантия выполнения<br> работ в срок
 					.block
-						img
-						p 1 год бесплатного сервисного обслуживания
+						.img.flex
+							img(src="assets/img/guarantee-2.png", alt="")
+						p 1 год бесплатного<br> сервисного обслуживания
 					.block
-						img
-						p 3 месяца бесплатного сопровождения при покупке нового продукта
+						.img.flex
+							img(src="assets/img/guarantee-3.png", alt="")
+						p 3 месяца бесплатного<br> сопровождения при покупке<br> нового продукта
 		section.accompaniment
 			.wrapper
-				.flex
-				.block
-					img
-					h3 Долгое ожидание
-					p Службы поддержки. В отчетный периодкаждая секунда на счет!
-				.block
-					img
-					h3 Парализована работа
-					p на несколько часов из-за формирования отчета или проведения обмена с другими базами.
-				.block
-					img
-					h3 Не защищенный компьютер
-					p на котором стояла база1С: сломался / заразили вирусы / изъяли / украли
-				.block
-					img
-					h3 Уволенный/обиженный сотрудник
-					p скопировал базу
-				.block
-					img
-					h3 Низкая скорость обмена данных
-					p При работе одного склада на несколько магазинов, в результате задержки при обменах между базами, на один товар оформляется несколько заказов
-				.block
-					img
-					h3 Перекладывание ответственности
-					p При возникновении проблем в работе базы программисты говорят, что дело в сервере, администраторы говорят,что дело в 1С. Вопрос не решается.
-				.block
-					img
-					h3 Ограниченный функционал
-					p Чтобы выставить счет и/или отправить закрывающие документы приходится терять время на поездку в офис или ожидание понедельника.
-				.block
-					img
-					h3 Устаревшая база
-					p Компании требуется обновление программ и дополнительный функционал под потребности бизнеса.
+				h1 Сопровождение 1С с интеллектом
+				p Мы решаем такие проблемы, как:
+				.row.flex
+					.block
+						.img.flex
+							img(src="assets/img/accompaniment-1.png", alt="")
+						h3 Долгое ожидание
+						p Службы поддержки. В отчетный периодкаждая секунда на счет!
+					.block
+						.img.flex
+							img(src="assets/img/accompaniment-2.png", alt="")
+						h3 Парализована работа
+						p на несколько часов из-за формирования отчета или проведения обмена с другими базами.
+					.block
+						.img.flex
+							img(src="assets/img/accompaniment-3.png", alt="")
+						h3 Не защищенный компьютер
+						p на котором стояла база1С: сломался / заразили вирусы / изъяли / украли
+					.block
+						.img.flex
+							img(src="assets/img/accompaniment-4.png", alt="")
+						h3 Уволенный/обиженный сотрудник
+						p скопировал базу
+					.block
+						.img.flex
+							img(src="assets/img/accompaniment-5.png", alt="")
+						h3 Низкая скорость обмена данных
+						p При работе одного склада на несколько магазинов, в результате задержки при обменах между базами, на один товар оформляется несколько заказов
+					.block
+						.img.flex
+							img(src="assets/img/accompaniment-6.png", alt="")
+						h3 Перекладывание ответственности
+						p При возникновении проблем в работе базы программисты говорят, что дело в сервере, администраторы говорят,что дело в 1С. Вопрос не решается.
+					.block
+						.img.flex
+							img(src="assets/img/accompaniment-7.png", alt="")
+						h3 Ограниченный функционал
+						p Чтобы выставить счет и/или отправить закрывающие документы приходится терять время на поездку в офис или ожидание понедельника.
+					.block
+						.img.flex
+							img(src="assets/img/accompaniment-8.png", alt="")
+						h3 Устаревшая база
+						p Компании требуется обновление программ и дополнительный функционал под потребности бизнеса.
 		section.specialist
 			.wrapper
 				h1 Выберите специалиста для своего бизнеса!

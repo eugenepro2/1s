@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>1s</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/font.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
@@ -40,7 +40,7 @@
     </header>
     <section class="slider">
       <div class="wrapper">
-        <h2>Профессиональное<br> внедрение и сопровождение<br><img src="assets/img/1s.png"> Преприятие</h2>
+        <h2>Профессиональное<br> внедрение и сопровождение<br><img src="assets/img/1s.png"> Предприятие</h2>
         <ul>
           <li>От 1 пользователя до крупного предприятия</li>
           <li>Закрепленный специалист</li>
@@ -50,7 +50,7 @@
       </div>
     </section>
     <section class="consultation">
-      <div class="wrapper">
+      <div class="wrapper flex">
         <form class="flex">
           <h2>Заполните заявку</h2>
           <p>и получите экспресс-аудит Вашей задачи с 3 вариантами решения</p>
@@ -64,17 +64,29 @@
     </section>
     <section class="counter flex">
       <div class="wrapper flex">
-        <div class="block"><img src="" alt="">
-          <p>Опыт работы с 1С 15 лет</p>
+        <div class="block flex">
+          <div class="flex"><img src="assets/img/experience.png" alt="Картинка с портфелем"></div>
+          <div class="description">
+            <p>Опыт работы с 1С 15 лет</p>
+          </div>
         </div>
-        <div class="block"><img src="" alt="">
-          <p>Лидеры по Самарской области в 1С</p>
+        <div class="block flex">
+          <div class="flex"><img src="assets/img/leaders.png" alt="Герб"></div>
+          <div class="description">
+            <p>Лидеры по Самарской области в 1С</p>
+          </div>
         </div>
-        <div class="block"><img src="" alt="">
-          <p>Более 300 благодарных клиентов</p>
+        <div class="block flex">
+          <div class="flex"><img src="assets/img/client.png" alt="Картинка с клиентами"></div>
+          <div class="description">
+            <p>Более 300 благодарных клиентов</p>
+          </div>
         </div>
-        <div class="block"><img src="" alt="">
-          <p>Гарантия выполнения работ в срок</p>
+        <div class="block flex">
+          <div class="flex"><img src="assets/img/hands.png" alt="Рукопажатие"></div>
+          <div class="description">
+            <p>Гарантия выполнения работ в срок</p>
+          </div>
         </div>
       </div>
     </section>
@@ -82,22 +94,25 @@
       <div class="wrapper">
         <h1>Внедрям 1С</h1>
         <div class="flex">
-          <div class="block">
-            <h2>Производство</h2><a class="order">Подробнее</a>
+          <div class="block i-1 flex">
+            <div class="item">
+              <h2>Производство</h2>
+              <div><a class="order">Подробнее</a></div>
+            </div>
           </div>
-          <div class="block">
-            <h2>Малое предприятие</h2><a class="order">Подробнее</a>
+          <div class="block i-2">
+            <h2>Малое<br>предприятие</h2><a class="order">Подробнее</a>
           </div>
         </div>
         <div class="flex">
-          <div class="block">
-            <h2>Бухгалтерия</h2><a class="order">Подробнее</a>
+          <div class="block i-3">
+            <h2>Бухгалтерия<br><span>пустышка</span></h2><a class="order">Подробнее</a>
           </div>
-          <div class="block">
-            <h2>Торговля</h2><a class="order">Подробнее</a>
+          <div class="block i-4">
+            <h2>Торговля<br><span>пустышка</span></h2><a class="order">Подробнее</a>
           </div>
-          <div class="block">
-            <h2>Отраслевые решения</h2><a class="order">Подробнее</a>
+          <div class="block i-5">
+            <h2>Отраслевые<br> решения</h2><a class="order">Подробнее</a>
           </div>
         </div>
       </div>
@@ -106,52 +121,66 @@
       <div class="wrapper">
         <h1>Мы гарантируем</h1>
         <div class="flex">
-          <div class="block"><img>
-            <p>Гарантия выполнения работ в срок</p>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/guarantee-1.png" alt=""></div>
+            <p>Гарантия выполнения<br> работ в срок</p>
           </div>
-          <div class="block"><img>
-            <p>1 год бесплатного сервисного обслуживания</p>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/guarantee-2.png" alt=""></div>
+            <p>1 год бесплатного<br> сервисного обслуживания</p>
           </div>
-          <div class="block"><img>
-            <p>3 месяца бесплатного сопровождения при покупке нового продукта</p>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/guarantee-3.png" alt=""></div>
+            <p>3 месяца бесплатного<br> сопровождения при покупке<br> нового продукта</p>
           </div>
         </div>
       </div>
     </section>
     <section class="accompaniment">
       <div class="wrapper">
-        <div class="flex"></div>
-        <div class="block"><img>
-          <h3>Долгое ожидание</h3>
-          <p>Службы поддержки. В отчетный периодкаждая секунда на счет!</p>
-        </div>
-        <div class="block"><img>
-          <h3>Парализована работа</h3>
-          <p>на несколько часов из-за формирования отчета или проведения обмена с другими базами.</p>
-        </div>
-        <div class="block"><img>
-          <h3>Не защищенный компьютер</h3>
-          <p>на котором стояла база1С: сломался / заразили вирусы / изъяли / украли</p>
-        </div>
-        <div class="block"><img>
-          <h3>Уволенный/обиженный сотрудник</h3>
-          <p>скопировал базу</p>
-        </div>
-        <div class="block"><img>
-          <h3>Низкая скорость обмена данных</h3>
-          <p>При работе одного склада на несколько магазинов, в результате задержки при обменах между базами, на один товар оформляется несколько заказов</p>
-        </div>
-        <div class="block"><img>
-          <h3>Перекладывание ответственности</h3>
-          <p>При возникновении проблем в работе базы программисты говорят, что дело в сервере, администраторы говорят,что дело в 1С. Вопрос не решается.</p>
-        </div>
-        <div class="block"><img>
-          <h3>Ограниченный функционал</h3>
-          <p>Чтобы выставить счет и/или отправить закрывающие документы приходится терять время на поездку в офис или ожидание понедельника.</p>
-        </div>
-        <div class="block"><img>
-          <h3>Устаревшая база</h3>
-          <p>Компании требуется обновление программ и дополнительный функционал под потребности бизнеса.</p>
+        <h1>Сопровождение 1С с интеллектом</h1>
+        <p>Мы решаем такие проблемы, как:</p>
+        <div class="row flex">
+          <div class="block">
+            <div class="img flex"><img src="assets/img/accompaniment-1.png" alt=""></div>
+            <h3>Долгое ожидание</h3>
+            <p>Службы поддержки. В отчетный периодкаждая секунда на счет!</p>
+          </div>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/accompaniment-2.png" alt=""></div>
+            <h3>Парализована работа</h3>
+            <p>на несколько часов из-за формирования отчета или проведения обмена с другими базами.</p>
+          </div>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/accompaniment-3.png" alt=""></div>
+            <h3>Не защищенный компьютер</h3>
+            <p>на котором стояла база1С: сломался / заразили вирусы / изъяли / украли</p>
+          </div>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/accompaniment-4.png" alt=""></div>
+            <h3>Уволенный/обиженный сотрудник</h3>
+            <p>скопировал базу</p>
+          </div>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/accompaniment-5.png" alt=""></div>
+            <h3>Низкая скорость обмена данных</h3>
+            <p>При работе одного склада на несколько магазинов, в результате задержки при обменах между базами, на один товар оформляется несколько заказов</p>
+          </div>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/accompaniment-6.png" alt=""></div>
+            <h3>Перекладывание ответственности</h3>
+            <p>При возникновении проблем в работе базы программисты говорят, что дело в сервере, администраторы говорят,что дело в 1С. Вопрос не решается.</p>
+          </div>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/accompaniment-7.png" alt=""></div>
+            <h3>Ограниченный функционал</h3>
+            <p>Чтобы выставить счет и/или отправить закрывающие документы приходится терять время на поездку в офис или ожидание понедельника.</p>
+          </div>
+          <div class="block">
+            <div class="img flex"><img src="assets/img/accompaniment-8.png" alt=""></div>
+            <h3>Устаревшая база</h3>
+            <p>Компании требуется обновление программ и дополнительный функционал под потребности бизнеса.</p>
+          </div>
         </div>
       </div>
     </section>
