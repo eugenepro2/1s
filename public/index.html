@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>1s</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -266,34 +265,77 @@
       </div>
     </section>
     <section class="free-consultation">
-      <div class="wrapper">
+      <div class="wrapper flex">
         <h1>Бесплатная консультация</h1>
         <p>Не знаете что выбрать? Спросите Светлану — она с радостью вам поможет подобрать 1С под ваши нужды. Оставьте здесь свои контакты, и ждите звонка.</p>
-        <form>
-          <input type="text">
-          <input type="text">
-          <input type="submit" placeholder="Заказать консультацию"><span>* гарантия конфиденциальности данных</span>
-        </form>
       </div>
+      <form>
+        <div class="wrapper flex">
+          <div class="flex">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Email">
+            <div>
+              <input type="submit" value="Заказать консультацию"><span>* гарантия конфиденциальности данных</span>
+            </div>
+          </div>
+        </div>
+      </form>
     </section>
     <section class="how-working">
-      <div class="wrapper">
-        <h1>Как мы работаем</h1>
+      <div class="wrapper flex">
+        <h1>Как мы работаем</h1><span class="first">Звонок</span><span class="second">Обсуждаем<br>сотрудничество</span><span class="third">Проводим<br>обследование<br>бизнес<br>процессов</span><span class="fourth">Фиксируем<br>сроки тех.<br>задание</span><span class="fifth">Заключаем<br>договор</span><span class="sixth">Получаем<br>аванс</span><span class="seventh">Выполняем<br>работы<br>согласно<br>договора</span><span class="eigth">Обучаем<br>персонал<br>и готовим<br>инструкции</span><span class="ninth">Подписываем<br>акт<br>выполненных<br>работ</span><span class="tenth">Улучшаем<br>продукт<br>исходя<br>из пожеланий<br>клиента</span><span class="eleventh">Составляем<br>кейс по<br>автоматизации</span>
       </div>
     </section>
     <section class="choose">
       <div class="wrapper">
-        <h1>Выбирайте надежную компанию</h1>
+        <h1><span>Выбирайте</span> надежную компанию</h1>
         <div class="flex">
-          <div class="white-cicle"><span>более</span><span>62%</span></div>
-          <p>наших клиентов рекомендовали нас своим друзьям и знакомым, партнерам и клиентам.</p>
+          <div class="white-circle"><span>более</span><span>62%</span></div>
+          <p>наших клиентов рекомендовали нас<br> своим друзьям и знакомым, партнерам и клиентам.</p>
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio flex">
       <div class="wrapper">
         <h1>Наши работы</h1>
-        <p>За 15 лет работы нами проделана огромная работа! Выполнено свыше 300 проектов по России. Выполняли работы от простых внедрений до автоматизации крупных торговых/производственных предприятий. Наши клиенты высоко оценивают уровень работ и оказываемый сервис.</p>
+        <p class="desc">За 15 лет работы нами проделана огромная работа! Выполнено свыше 300 проектов по России. Выполняли работы от простых внедрений до автоматизации крупных торговых/производственных предприятий. Наши клиенты высоко оценивают уровень работ и оказываемый сервис.</p>
+        <div class="tab flex"> <span>Оптовая и розничная торговля (10)</span><span>Производство (6)</span><span>Услуги (2)</span></div>
+        <div class="white-block flex">
+          <div class="block flex"><img src="assets/img/logo-portfolio.png" alt="">
+            <div class="flex">
+              <p>Группа компаний</p>
+              <p>«Промышленная безопасность»</p><a href="#">www.ekoprombez.ru</a>
+            </div>
+            <div>
+              <p class="glav-byx">Главный бухгалтер</p>
+              <p>Пирожкова Надежда Петровна</p>
+              <p>+7 8482 68-50-81</p>
+            </div>
+            <div class="video"><a href="#"><img src="assets/img/video.png" alt=""></a></div>
+          </div>
+          <div class="block minus">
+            <h3>Было</h3>
+            <ul>
+              <li>Велся учет в 1С:Бухгалтерии</li>
+              <li>Разные виды деятельности велись сотрудниками и информация хранилась только у них</li>
+              <li>Заявки с новыми клиентами оформлялись специальными документами в файлах</li>
+              <li>Комплектование групп для обучения производилось в ручном режиме</li>
+              <li>Задолженность по оперативной деятельности не сходилась с данными в 1С:Бухгалтерии</li>
+              <li>В отдельных филиалах велся учет отдельно и не связанно с центральным офисом</li><a href="#">cмотреть все</a>
+            </ul>
+          </div>
+          <div class="block plus">
+            <h3>Стало</h3>
+            <ul>
+              <li>Объединен учет всех филиалов в единую систему</li>
+              <li>Все виды деятельности стали работать по настроенным бизнес-процессам на сервере</li>
+              <li>Разработана и внедрена уникальная система оформления всех документов в 1С</li>
+              <li>Внедрена система обучения от заказов до проведения экзаменов и формирования закрывающих документов</li>
+              <li>Настроен единый контроль за дебиторской задолженностью</li><a href="#">cмотреть все</a>
+            </ul>
+          </div>
+        </div>
+        <footer class="flex"><a href="#">Показать еще работы</a><a href="#" class="order">Хочу такой же результат</a></footer>
       </div>
     </section>
     <section class="certificate">
