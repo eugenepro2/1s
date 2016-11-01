@@ -3,6 +3,8 @@ var gulp = require('gulp'),
 		cssnano = require('gulp-cssnano'),
 		connect = require('gulp-connect');
 		sass = require('gulp-sass');
+    autoprefixer = require('gulp-autoprefixer');
+    csscomb = require('gulp-csscomb');
 
 // Jade
 gulp.task('jade', function(){
@@ -17,11 +19,15 @@ gulp.task('jade', function(){
 
 gulp.task('sass', function () {
   return gulp.src('./assets/**/*.sass')
+    .pipe(autoprefixer({
+            browsers: ['last 1 versions'],
+            cascade: false
+    }))
     .pipe(sass({
       includePaths: require('node-bourbon').includePaths,
       includePaths: require('node-neat').includePaths
     }).on('error', sass.logError))
-    //.pipe(cssnano())
+    .pipe(csscomb())
     .pipe(gulp.dest('./public/assets'))
     .pipe(connect.reload());
 });

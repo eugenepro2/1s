@@ -1,5 +1,5 @@
-@import "bourbon";
-@import "neat";
+@import "bourbon"
+@import "neat"
 $blue: #1b5bbb
 $light-blue: #01a8ec
 $gothambold: "GothamProBold"
@@ -7,11 +7,15 @@ $gothamregular: "GothamProRegular"
 $roboto: "RobotoRegular"
 
 body
+	position: relative
+	line-height: 1.4
 .wrapper
 	width: 960px
 	margin: 0 auto
 .flex
 	display: flex
+.none
+	display: none
 .order
 	background: $light-blue
 	border-radius: 21px
@@ -21,16 +25,67 @@ body
 	padding: 14px 16px 16px 16px
 	color: #fff
 	font-family: $gothamregular
+	transition: all 0.5s
+	cursor: pointer
+	&:active
+		color: #fff
+		text-decoration: none
+		transition: all 0.5s
+		top: 1px
+		position: relative
+	&:hover, &:focus
+		color: #fff
+		text-decoration: none
+		background: #1194ca
+.question-mark
+	width: 19px
+	height: 19px
+	background: #fff
+	border-radius: 50%
+	display: inline-block
+	color: #000
+	font-size: 13.5px
+	margin-left: 7px
+	font-family: "RobotoRegular"
+	position: relative
+	cursor: pointer
+	.tooltiptext
+		visibility: hidden
+		width: 120px
+		background-color: #fff
+		color: #000
+		text-align: center
+		padding: 5px 0
+		border-radius: 6px
+		position: absolute
+		z-index: 1
+		bottom: -5px
+		left: 27px
+	&:hover .tooltiptext
+		visibility: visible
+	.tooltiptext::after
+		content: " "
+		position: absolute
+		top: 50%
+		right: 100%
+		margin-top: -5px
+		border-width: 5px
+		border-style: solid
+		border-color: transparent #fff transparent transparent
 h1
 	font-size: 50px
 	font-family: $gothambold
 h2
 	font-size: 36px
 
+
 header
 	nav
 		background: $blue
 		height: 50px
+		position: fixed
+		width: 100%
+		z-index: 101
 		ul
 			height: 50px
 			justify-content: space-between
@@ -42,9 +97,13 @@ header
 					font-size: 16px
 					&:active, &:hover, &:focus
 						color: #fff
+						background-color: $light-blue !important
+			.active
+				background: $light-blue
 	div.header
 		background: url('/assets/img/header-bg.png')
-		height: 136px
+		height: 186px
+		padding: 50px
 		background-position: 50% 100%
 		div.wrapper
 			height: 136px
@@ -65,28 +124,34 @@ header
 				span.phone 
 					font-size: 30px
 					text-align: right
+				i.icon-mail
+					font-size: 23px
+					position: relative
+					top: 4px
 				span.email
 					font-size: 16px
 					text-align: right
+				i
+					color: #cec9c9
 			div.block-order
 				margin: auto 0 auto auto
 section.slider
 	background: url('/assets/img/slider-bg.png') no-repeat
 	height: 600px
 	margin-top: -45px
-	background-position: 46% 0%
+	background-position: 52% 0%
 	position: relative
 	h2
 		color: $blue
-		padding-top: 100px
-		padding-left: 90px
+		padding-top: 90px
+		padding-left: 70px
 		img
 			position: relative
 			top: 7px
 	ul
 		list-style-image: url('/assets/img/circle.png')
 		position: relative
-		padding-left: 90px
+		padding-left: 70px
 		left: 22px
 		top: 20px
 		li
@@ -138,6 +203,16 @@ section.consultation
 				color: #fff
 				font-family: $gothamregular
 				width: 220px
+				&:active
+					color: #fff
+					text-decoration: none
+					transition: all 0.5s
+					top: 1px
+					position: relative
+				&:hover, &:focus
+					color: #fff
+					text-decoration: none
+					background: #1194ca
 section.counter
 	background: url('/assets/img/counter-bg.png') no-repeat
 	height: 450px
@@ -165,7 +240,7 @@ section.introduction
 	h1 
 		text-align: center
 		padding-top: 60px
-		padding-bottom: 20px
+		padding-bottom: 40px
 	div.block
 		width: 319px
 		height: 198px
@@ -192,14 +267,105 @@ section.introduction
 		background: url('/assets/img/introduction-4.png') no-repeat
 	div.i-5
 		background: url('/assets/img/introduction-5.png') no-repeat
+	.products
+		.h2
+			font-family: $gothambold
+			padding: 70px 0 40px
+			font-size: 24px
+			color: #0380b3
+			text-align: center
+		.row
+			flex-wrap: wrap
+			margin: 0 auto
+			justify-content: space-around
+			.product
+				width: 220px
+				img
+					display: flex
+					margin: auto
+				.item
+					margin-top: 22px 
+					background: #e6e6e6
+					padding: 40px 25px
+					h3
+						font-size: 14px
+						text-align: center
+						font-family: $gothambold
+					.cost
+						font-family: $gothambold
+						font-size: 24px 
+						color: #0380b3
+						text-align: center
+						padding: 30px 0 20px
+						i
+							position: relative
+							top: 2px
+							left: 5px
+					.description
+						font-family: $gothamregular
+						font-size: 13px
+	.complex
+		width: 700px
+		margin: auto
+		padding: 90px 0 120px
+		h2
+			font-family: $gothambold
+			font-size: 18px
+			padding-bottom: 40px
+			text-align: center
+		p
+			font-family: $gothamregular
+			font-size: 18px
+			padding-bottom: 20px
+		.price
+			margin-left: auto
+			p
+				text-align: right
+	form
+		flex-direction: column
+		p
+			font-size: 18px
+			font-family: "RobotoMedium"
+			color: #0380b3
+			margin: auto
+			padding-bottom: 45px
+		input[type="text"]
+			background-color: rgba(255, 255, 255, 0.5)
+			border: 1px solid #000
+			border-radius: 2px
+			margin: auto
+			width: 220px
+			padding: 10px
+		input[type="submit"]
+			background: $light-blue
+			border-radius: 21px
+			box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -5px 0 rgba(3, 128, 179, 0.78)
+			font-size: 16px
+			font-weight: 400
+			padding: 10px 16px 12px 16px
+			color: #fff
+			font-family: $gothamregular
+			width: 220px
+			border: 0px solid
+			&:active
+				color: #fff
+				text-decoration: none
+				transition: all 0.5s
+				top: 1px
+				position: relative
+			&:hover, &:focus
+				color: #fff
+				text-decoration: none
+				background: #1194ca
 section.guarantee
 		background: url('/assets/img/guarantee-bg.png') no-repeat
-		height: 420px
+		height: 500px
+		background-size: cover
 		background-position: 50% 50%
 		h1
 			color: #fff
 			text-align: center
-			padding: 30px 0
+			padding: 70px 0 60px
 		div.block
 			width: 33% 
 			div.img
@@ -211,16 +377,17 @@ section.guarantee
 				font-size: 18px
 				font-family: $gothambold
 				line-height: 1.5
+				text-align: center
 section.accompaniment
 	background: #e6e6e6
-	padding-top: 100px
+	padding-top: 90px
 	padding-bottom: 30px
 	h1, p
 		text-align: center
 		font-family: $gothambold
 	p
 		font-size: 24px
-		padding-bottom: 20px
+		padding-bottom: 40px
 	.row
 		flex-wrap: wrap
 		justify-content: space-around
@@ -243,26 +410,22 @@ section.accompaniment
 				font-family: $roboto
 				line-height: 1.2
 section.specialist
-	height: 820px
 	.wrapper
 		flex-direction: column
 		h1
 			font-size: 40px
 			text-align: center
 			padding: 50px 0
-		.carousel
-			height: 500px
 		.block
 			width: 940px
-			height: 480px
 			border: 2px solid $blue
-			margin: auto 
+			margin: auto
 			.block-item
 				width: 50%
 			h2
 				font-size: 24px
 				font-family: $gothambold
-				padding: 40px
+				padding: 25px 40px
 			p
 				padding: 5px 40px
 				font-family: $gothambold
@@ -279,53 +442,61 @@ section.specialist
 					bottom: 40px
 					a
 						margin: auto
+			.image
+				padding: 15px 40px
+				img
+					width: 63px
+					height: 90px
+					margin: 0 10px
+					box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.2)
 		.block-first:after
 			content: ""
 			position: absolute
-			left: 46px
-			bottom: -10px
+			left: 55px
+			bottom: -30px
 			border: 10px solid transparent
 			border-top: 20px solid $blue
+			z-index: 100
 		.block-second:after
 			content: ""
 			position: absolute
-			left: 170px
-			bottom: -10px
+			left: 194px
+			bottom: -30px
 			border: 10px solid transparent
 			border-top: 20px solid $blue
 		.block-third:after
 			content: ""
 			position: absolute
-			left: 290px
-			bottom: -10px
+			left: 333px
+			bottom: -30px
 			border: 10px solid transparent
 			border-top: 20px solid $blue
 		.block-fourth:after
 			content: ""
 			position: absolute
-			left: 410px
-			bottom: -10px
+			left: 470px
+			bottom: -30px
 			border: 10px solid transparent
 			border-top: 20px solid $blue
 		.block-fifth:after
 			content: ""
 			position: absolute
-			left: 527px
-			bottom: -10px
+			left: 607px
+			bottom: -30px
 			border: 10px solid transparent
 			border-top: 20px solid $blue
 		.block-sixth:after
 			content: ""
 			position: absolute
-			left: 647px
-			bottom: -10px
+			left: 743px
+			bottom: -30px
 			border: 10px solid transparent
 			border-top: 20px solid $blue
 		.block-seventh:after
 			content: ""
 			position: absolute
-			left: 768px
-			bottom: -10px
+			left: 880px
+			bottom: -30px
 			border: 10px solid transparent
 			border-top: 20px solid $blue
 		ul
@@ -333,8 +504,11 @@ section.specialist
 			position: relative
 			justify-content: space-around
 			padding: 40px 0
+		.carousel-inner
+			overflow: visible
 section.rates
-	background: #e6e6e6 
+	background: #e6e6e6
+	padding-bottom: 30px
 	h1
 		text-align: center
 		padding: 70px 0
@@ -354,6 +528,7 @@ section.rates
 					text-align: center
 					vertical-align: middle
 					font-family: $gothambold
+					width: 220px
 				th.blue
 					color: $blue
 				th
@@ -366,6 +541,54 @@ section.rates
 				background: #ededed
 			tr:nth-child(3)
 				background: #f2f2f2
+			i.icon-ruble
+				font-size: 25px
+				position: relative
+				top: 6px
+				left: 6px
+			span.question-mark
+				background-color: #ccc
+				padding-top: 2px
+				.tooltiptext
+					border: 1px solid #ccc
+				.tooltiptext::after
+					border-color: transparent #ccc transparent transparent
+	form
+		p
+			font-size: 18px
+			font-family: "RobotoMedium"
+			color: #0380b3
+			margin: auto
+			padding-bottom: 45px
+		input[type="text"]
+			background-color: rgba(255, 255, 255, 0.5)
+			border: 1px solid #999
+			border-radius: 2px
+			margin: auto
+			width: 220px
+			padding: 10px
+		input[type="submit"]
+			background: $light-blue
+			border-radius: 21px
+			box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -5px 0 rgba(3, 128, 179, 0.78)
+			font-size: 16px
+			font-weight: 400
+			padding: 10px 16px 12px 16px
+			color: #fff
+			font-family: $gothamregular
+			width: 220px
+			border: 0px solid
+			&:active
+				color: #fff
+				text-decoration: none
+				transition: all 0.5s
+				top: 1px
+				position: relative
+			&:hover, &:focus
+				color: #fff
+				text-decoration: none
+				background: #1194ca
+								
 	.question
 		padding: 50px 0
 		div
@@ -374,8 +597,6 @@ section.rates
 				font-family: $gothambold
 		a.order 
 			margin: auto
-
-
 section.why-us
 	background: url('/assets/img/why-us-bg.png') no-repeat
 	height: 693px
@@ -405,7 +626,7 @@ section.why-us
 				padding-bottom: 50px
 section.free-consultation
 	height: 440px
-	background: url('/assets/img/free-consultation-bg.png') no-repeat
+	background: url('/assets/img/image/image.jpg') no-repeat
 	background-position: 50% 0%
 	.wrapper
 		height: 440px
@@ -449,12 +670,23 @@ section.free-consultation
 					color: #fff
 					font-family: $gothamregular
 					width: 220px
+					margin-top: 19px
+					&:active
+						color: #fff
+						text-decoration: none
+						transition: all 0.5s
+						top: 1px
+						position: relative
+					&:hover, &:focus
+						color: #fff
+						text-decoration: none
+						background: #1194ca
 				span
 					display: block
 					color: #fff
 					font-size: 10px
 					padding-left: 12px
-					padding-top: 5px
+					padding-top: 10px
 					font-family: $roboto
 				div
 					margin: auto
@@ -506,13 +738,14 @@ section.how-working
 		top: 558px
 		left: 87px
 section.choose
-	background: url('/assets/img/choose-bg.png')
-	height: 300px
+	background: url('/assets/img/choose-bg.png') no-repeat
+	background-size: cover
+	height: 315px
 	h1
 		font-size: 36px
 		color: #fff
 		text-align: center
-		padding: 70px 0
+		padding: 55px 0 65px
 	span
 		font-family: $gothamregular
 	.white-circle
@@ -538,10 +771,12 @@ section.choose
 		font-size: 24px
 		padding-top: 22px
 		padding-left: 20px
-
+header.portfolio
+	height: 17px
+	background: url('/assets/img/header-portfolio-bg.jpg') no-repeat
 section.portfolio
 	background: #e6e6e6
-	height: 950px
+	padding-bottom: 30px
 	h1
 		text-align: center
 		padding: 60px 0 30px 0
@@ -551,8 +786,8 @@ section.portfolio
 		width: 780px
 		margin: auto
 		line-height: 1.2
-	div.tab
-		margin: 10px auto
+	.tab
+		margin: 23px auto 32px
 		background: $light-blue
 		border-radius: 21px
 		box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -5px 0 rgba(3, 128, 179, 0.78)
@@ -563,13 +798,18 @@ section.portfolio
 		font-family: $gothamregular
 		justify-content: space-between
 		width: 700px
-		span
+		a
+			color: #fff
 			font-size: 12px
 			font-family: "RobotoRegular"
-		span:nth-child(2)
+			&:active, &:hover, &:focus
+				text-decoration: none
+		.active
+			border-bottom: 1px dashed #fff
+		li:nth-child(2)
 			position: relative
 			right: 50px
-		span:nth-child(3)
+		li:nth-child(3)
 			position: relative
 			right: 50px
 	div.white-block
@@ -578,6 +818,7 @@ section.portfolio
 		height: 550px
 		border-radius: 2px
 		box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3)
+	div.item
 		.block
 			flex-direction: column
 			width: 33%
@@ -590,13 +831,14 @@ section.portfolio
 				flex-direction: column
 				p
 					font-family: "RobotoMedium"
-					font-size: 16px
+					font-size: 14px
 					text-align: center
-					padding: 5px
+					padding: 0 35px
 				a
 					margin: auto
 					color: #8c681f
 					padding: 5px
+					text-align: center
 				p.glav-byx
 					color: #666666
 			div.video
@@ -613,24 +855,59 @@ section.portfolio
 					font-size: 16px
 					padding: 7px 0
 					width: 90%
+			.itogo
+				width: 661px
+				position: relative
+				right: 323px
+				top: 65px
+				p
+					font-family: "RobotoRegular"
+					padding-bottom: 20px
+			.company
+				p
+					font-family: "RobotoRegular"
+					font-size: 14px
 		.minus
 			li
 				list-style-image: url('/assets/img/minus.png')
 		.plus
 			li
 				list-style-image: url('/assets/img/plus.png')
+	#collapsePortfolioFirst, #collapsePortfolioSecond, #collapsePortfolioThird
+		.item
+			display: none
 	footer
-		padding-top: 30px
 		justify-content: space-between
 		width: 940px
-		a.see
-			margin: auto 0
+		button.see
+			margin: 45px 0 auto
 			color: $light-blue
 			font-family: "RobotoMedium"
 			font-size: 16px
 			padding-left: 30px
+			border: 0px solid
+			background: transparent
 		div
-			margin: auto 0
+			margin: 40px 0 auto auto
+	.all-works
+		.item
+			background: #fff
+			box-shadow: 0 10px 22.6px 1.4px rgba(0, 0, 0, 0.3)
+			padding: 20px 40px
+			margin: 20px 0px
+			h2 
+				font-family: "RobotoMedium"
+				font-size: 18px
+			p.description
+				padding-bottom: 50px
+			p
+				font-family: "RobotoRegular"
+				font-size: 14px
+				line-height: 1.5
+			a
+				display: block
+			li
+				line-height: 1.5
 section.certificate
 	background: url('/assets/img/certificate-bg.png')
 	height: 490px
@@ -671,7 +948,7 @@ section.review
 			padding: 25px
 			position: relative
 			p
-				line-height: 1.2
+				line-height: 1.3
 			p:first-child
 				padding-bottom: 30px
 				font-family: "RobotoBold"
@@ -679,6 +956,17 @@ section.review
 			p:last-child
 				font-size: 14px
 				font-family: "RobotoRegular"
+			button
+				background: transparent
+				border: 0px solid
+				padding: 0
+				margin: 0
+				color: $light-blue
+				i
+					color: green
+					position: relative
+					bottom: 4px
+					right: 2px
 		.block:after
 			content: ""
 			position: absolute
@@ -686,18 +974,33 @@ section.review
 			top: 152px
 			border: 20px solid transparent
 			border-left: 50px solid #e6e6e6
+			transform: skewY(-30deg)
 section.our-team
 	background: #e6e6e6
 	padding-bottom: 70px
 	h1 
 		font-size: 36px
 		text-align: center
-		padding: 50px 0
+		padding: 50px 0 40px
+	i
+		font-size: 28px
+		position: relative
+		top: 12px
+	i.icon-left-arrow
+		right: 1px
+	i.icon-right-arrow
+		left: 1px
 section.faq
 	h1
 		font-size: 36px
 		text-align: center
-		padding: 50px 0
+		padding: 45px 0 30px
+	div.panel-body
+		width: 100%
+		a
+			color: $light-blue
+	div.panel-group
+		margin-bottom: 100px
 	h4
 		font-family: $gothambold
 		padding-left: 0px
@@ -706,9 +1009,14 @@ section.faq
 		a
 			border-bottom: 1px dashed #000
 			text-decoration: none
-			&:hover, &:active, &:focus
+			&:hover
 				color: $light-blue
 				border-bottom: 0px dashed #000
+	ul
+		list-style: disc
+		padding: 20px
+	p
+		padding: 10px 0
 	.panel-body
 		background: #e6e6e6
 		padding: 20px
@@ -718,9 +1026,19 @@ section.faq
 		font-size: 16px
 		width: 740px
 section.contact
-	background: url('/assets/img/contact-us-bg.png')
-	height: 400px
-	background-position: 50%
+	position: relative
+	.block
+		background: url('/assets/img/contact-us-bg.png')
+		height: 400px
+		background-position: 30%
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 100
+		margin: auto
+		width: 650px
+	.wrapper
+		width: 330px
 	h2 
 		font-family: $gothambold
 		font-size: 24px
@@ -728,10 +1046,9 @@ section.contact
 	p.ooo
 		font-family: $gothambold
 		font-size: 16px
-		padding: 60px 0 30px 0
+		padding: 45px 0 20px 0
 	div.flex
 		justify-content: space-between
-		width: 40%
 		padding: 5px 0
 		p
 			font-size: 16px
@@ -743,7 +1060,7 @@ section.contact
 			color: #000
 			text-decoration: underline
 	div.adress
-		padding-bottom: 20px
+		padding-bottom: 10px
 section.question
 	background: url('/assets/img/question-bg.png') no-repeat
 	height: 417px
@@ -779,7 +1096,7 @@ section.question
 				background: transparent
 				padding: 10px
 				margin: auto
-				width: 220px
+				width: 280px
 				display: block
 				margin: 5px 0
 			textarea
@@ -795,7 +1112,17 @@ section.question
 				padding: 10px 16px 12px 16px
 				color: #fff
 				font-family: $gothamregular
-				width: 220px
+				width: 280px
+				&:active
+					color: #fff
+					text-decoration: none
+					transition: all 0.5s
+					top: 1px
+					position: relative
+				&:hover, &:focus
+					color: #fff
+					text-decoration: none
+					background: #1194ca
 			input[type="file"]
 				position: absolute
 				left: 0
@@ -813,14 +1140,14 @@ section.question
 				position: relative
 				color: #fff
 				bottom: 41px
-				left: 166px
-				width: 53px
+				left: 179px
+				width: 100px
 				height: 35px
-				background-image: linear-gradient(to top, #0380b3 0%, #0380b3 20%, #01a8ec 81%, #01a8ec 100%);
+				background-image: linear-gradient(to top, #0380b3 0%, #0380b3 20%, #01a8ec 81%, #01a8ec 100%)
 				span
 					position: relative
-					top: 9px
-					left: 6px
+					top: 8px
+					left: 27px
 footer
 	height: 135px
 	.wrapper
@@ -880,16 +1207,6 @@ footer
 		top: 7px
 		right: 2px
 		width: 35px
-.carousel-control.left
-	left: 12%
-.carousel-control.right
-	left: 85%
-	img
-		position: relative
-		top: 7px
-		right: 0px
-		width: 35px
-
 .carousel-team
 	.carousel-inner
 		height: 100%
@@ -897,3 +1214,53 @@ footer
 		margin: auto
 		.item
 			height: 100%
+@media only screen and (max-width: 960px)
+	section, header, body
+		width: 960px
+	.wrapper
+		padding: 0 20px
+	section.rates
+		.white-block
+			width: 920px
+			table
+				width: 900px
+.form-specialist
+	width: 600px
+	height: 115px
+	form
+		flex-direction: column
+		p
+			font-size: 18px
+			font-family: "RobotoMedium"
+			color: #0380b3
+			margin: auto
+			padding-bottom: 45px
+		input[type="text"]
+			background-color: rgba(255, 255, 255, 0.5)
+			border: 1px solid #000
+			border-radius: 2px
+			margin: auto
+			width: 180px
+			padding: 10px
+		input[type="submit"]
+			margin: 20px auto
+			background: $light-blue
+			border-radius: 21px
+			box-shadow: 0 2px 15.6px 1.4px rgba(0, 0, 0, 0.3), inset 0 -2px 0 rgba(3, 128, 179, 0.78)
+			font-size: 16px
+			font-weight: 400
+			padding: 10px 16px 12px 16px
+			color: #fff
+			font-family: $gothamregular
+			width: 220px
+			border: 0px solid
+			&:active
+				color: #fff
+				text-decoration: none
+				transition: all 0.5s
+				top: 1px
+				position: relative
+			&:hover, &:focus
+				color: #fff
+				text-decoration: none
+				background: #1194ca

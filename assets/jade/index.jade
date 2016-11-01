@@ -7,39 +7,42 @@ html(lang="ru")
 		link(rel="stylesheet", href="assets/css/reset.css")
 		link(rel="stylesheet", href="assets/css/styles.css")
 		link(rel="stylesheet", href="assets/css/font.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
-	body
-		header
-			nav
+		script(src="https://api-maps.yandex.ru/1.1/index.xml")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js")
+	body(data-spy="scroll" data-target="#navbar")
+		header#home
+			nav#navbar
 				.wrapper
-					ul.flex
+					ul.nav.navbar-nav.flex
 						li
-							a(href="#") Главная
+							a(href="#home") Главная
 						li
-							a(href="#") Услуги
+							a(href="#consultation") Услуги
 						li
-							a(href="#") Гарантии
+							a(href="#guarantee") Гарантии
 						li
-							a(href="#") Схема работы
+							a(href="#how-working") Схема работы
 						li
-							a(href="#") Отзывы
+							a(href="#portfolio") Отзывы
 						li 
-							a(href="#") О компании
+							a(href="#team") О компании
 						li
-							a(href="#") Сертификаты 
+							a(href="#certificate") Сертификаты 
 						li
-							a(href="#") FAQ
+							a(href="#faq") FAQ
 						li
-							a(href="#") Контакты
+							a(href="#contact") Контакты
 			.header
 				.wrapper.flex
 					.logo
 						img(src="assets/img/logo.png", alt="Logo")
 						p совершенство вашего бизнеса
 					.contact
-						span.phone 8 800 250 73-88
-						span.email info@vivat-iq.ru
+						span.phone <i class="icon-phone-call"></i> 8 800 250 73-88
+						span.email <i class="icon-mail"></i> info@vivat-iq.ru
 					div.block-order
 						a(href="#").order Заказать звонок
 		section.slider
@@ -50,7 +53,7 @@ html(lang="ru")
 					li Закрепленный специалист
 					li Бесплатные консультации
 					li Поддержка 24/7
-		section.consultation
+		section.consultation#consultation
 			.wrapper.flex
 				form.flex
 					h2 Заполните заявку
@@ -89,21 +92,307 @@ html(lang="ru")
 						div.item
 							h2 Производство
 							div
-								a.order Подробнее
+								a(role="button" data-toggle="collapse" href="#collapseFirst" aria-expanded="false" aria-controls="collapseFirst").order Подробнее
 					.block.i-2
 						h2 Малое<br>предприятие
-						a.order Подробнее
+						a(role="button" data-toggle="collapse" href="#collapseSecond" aria-expanded="false" aria-controls="collapseSecond").order Подробнее
 				.flex
 					.block.i-3
 						h2 Бухгалтерия<br><span>пустышка</span>
-						a.order Подробнее
+						a(role="button" data-toggle="collapse" href="#collapseThird" aria-expanded="false" aria-controls="collapseThird").order Подробнее
 					.block.i-4
 						h2 Торговля<br><span>пустышка</span>
-						a.order Подробнее
+						a(role="button" data-toggle="collapse" href="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth").order Подробнее
 					.block.i-5
 						h2 Отраслевые<br> решения
-						a.order Подробнее
-		section.guarantee
+						a(role="button" data-toggle="collapse" href="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth").order Подробнее
+				.collapse-list
+					#collapseFirst.collapse
+						.products
+							p.h2 Цены 1С: Предприятие 1
+							.row.flex
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+						.flex
+							.complex
+								h2 Поможем комплексно подойти к решению Ваших задач
+								.flex
+									div.list
+										p Перенос данных из предыдущей системы
+										p Загрузка номенклатуры и цен из внешних файлов
+										p Обучение сотрудников
+										p Нестандартное решение
+										p Дополнительные печатные формы
+										p Предпроектное обследование
+									div.price
+										p от 4 800 Р—
+										p от 2 400 Р—
+										p от 4 800 Р—
+										p от 12 000 Р—
+										p от 2 400 Р—
+										p от 1 600 Р—
+						form.flex
+							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
+							div.flex
+								input(type="text" placeholder="Имя")
+								input(type="text" placeholder="Телефон")
+								input(type="text" placeholder="Email")
+								input(type="submit" value="Заказать консультацию")
+					#collapseSecond.collapse
+						.products
+							p.h2 Цены 1С: Предприятие 2
+							.row.flex
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+						.flex
+							.complex
+								h2 Поможем комплексно подойти к решению Ваших задач
+								.flex
+									div.list
+										p Перенос данных из предыдущей системы
+										p Загрузка номенклатуры и цен из внешних файлов
+										p Обучение сотрудников
+										p Нестандартное решение
+										p Дополнительные печатные формы
+										p Предпроектное обследование
+									div.price
+										p от 4 800 Р—
+										p от 2 400 Р—
+										p от 4 800 Р—
+										p от 12 000 Р—
+										p от 2 400 Р—
+										p от 1 600 Р—
+						form.flex
+							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
+							div.flex
+								input(type="text" placeholder="Имя")
+								input(type="text" placeholder="Телефон")
+								input(type="text" placeholder="Email")
+								input(type="submit" value="Заказать консультацию")
+					#collapseThird.collapse
+						.products
+							p.h2 Цены 1С: Предприятие 3
+							.row.flex
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+						.flex
+							.complex
+								h2 Поможем комплексно подойти к решению Ваших задач
+								.flex
+									div.list
+										p Перенос данных из предыдущей системы
+										p Загрузка номенклатуры и цен из внешних файлов
+										p Обучение сотрудников
+										p Нестандартное решение
+										p Дополнительные печатные формы
+										p Предпроектное обследование
+									div.price
+										p от 4 800 Р—
+										p от 2 400 Р—
+										p от 4 800 Р—
+										p от 12 000 Р—
+										p от 2 400 Р—
+										p от 1 600 Р—
+						form.flex
+							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
+							div.flex
+								input(type="text" placeholder="Имя")
+								input(type="text" placeholder="Телефон")
+								input(type="text" placeholder="Email")
+								input(type="submit" value="Заказать консультацию")
+					#collapseFourth.collapse
+						.products
+							p.h2 Цены 1С: Предприятие 4
+							.row.flex
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+						.flex
+							.complex
+								h2 Поможем комплексно подойти к решению Ваших задач
+								.flex
+									div.list
+										p Перенос данных из предыдущей системы
+										p Загрузка номенклатуры и цен из внешних файлов
+										p Обучение сотрудников
+										p Нестандартное решение
+										p Дополнительные печатные формы
+										p Предпроектное обследование
+									div.price
+										p от 4 800 Р—
+										p от 2 400 Р—
+										p от 4 800 Р—
+										p от 12 000 Р—
+										p от 2 400 Р—
+										p от 1 600 Р—
+						form.flex
+							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
+							div.flex
+								input(type="text" placeholder="Имя")
+								input(type="text" placeholder="Телефон")
+								input(type="text" placeholder="Email")
+								input(type="submit" value="Заказать консультацию")
+					#collapseFifth.collapse
+						.products
+							p.h2 Цены 1С: Предприятие 5
+							.row.flex
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product
+									img(src="assets/img/product-1.png", alt="")
+									.item
+										h3 1С:Розница 8. Базовая версия
+										p.cost 3300
+											i.icon-ruble
+										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+						.flex
+							.complex
+								h2 Поможем комплексно подойти к решению Ваших задач
+								.flex
+									div.list
+										p Перенос данных из предыдущей системы
+										p Загрузка номенклатуры и цен из внешних файлов
+										p Обучение сотрудников
+										p Нестандартное решение
+										p Дополнительные печатные формы
+										p Предпроектное обследование
+									div.price
+										p от 4 800 Р—
+										p от 2 400 Р—
+										p от 4 800 Р—
+										p от 12 000 Р—
+										p от 2 400 Р—
+										p от 1 600 Р—
+						form.flex
+							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
+							div.flex
+								input(type="text" placeholder="Имя")
+								input(type="text" placeholder="Телефон")
+								input(type="text" placeholder="Email")
+								input(type="submit" value="Заказать консультацию")
+		section.guarantee#guarantee
 			.wrapper
 				h1 Мы гарантируем
 				.flex
@@ -111,14 +400,20 @@ html(lang="ru")
 						.img.flex
 							img(src="assets/img/guarantee-1.png", alt="")
 						p Гарантия выполнения<br> работ в срок
+							span.question-mark ?
+								span.tooltiptext Tooltip text
 					.block
 						.img.flex
 							img(src="assets/img/guarantee-2.png", alt="")
 						p 1 год бесплатного<br> сервисного обслуживания
+							span.question-mark ?
+								span.tooltiptext Tooltip text
 					.block
 						.img.flex
 							img(src="assets/img/guarantee-3.png", alt="")
 						p 3 месяца бесплатного<br> сопровождения при покупке<br> нового продукта
+							span.question-mark ?
+								span.tooltiptext Tooltip text
 		section.accompaniment
 			.wrapper
 				h1 Сопровождение 1С с интеллектом
@@ -167,122 +462,134 @@ html(lang="ru")
 		section.specialist
 			.wrapper.flex
 				h1 Выберите специалиста для своего бизнеса!
-				#carousel.carousel.slide.carousel-fade.carousel-team(data-ride='carousel')
+				#carousel.carousel.slide.carousel-fade.carousel-team(data-ride='carousel' data-interval="false")
 					.carousel-inner
 						.active.item
 							.block.flex.block-first
 								.block-item
-									h2 Алексей, 1С программист
+									h2.name Глеб, Программист
 									p Опыт работы: 
-										span 1.5 года
+										span 1 год
 									p Обзарование:<br>
-										span Высшее (Бакалавр – Инженер автоматизации).
+										span Высшее (Бакалавр – Прикладная математика и информатика).
 									p Средняя продолжительность ведения проектов:<br>
-										span 3 месяца
+										span 4 месяца
 									p Специализация:<br>
-										span Управление торговлей (доработка конфигураций, написание программного кода).
+										span заработная плата и кадровый учет, сложные технические разработки (доработка конфигураций, написание программного кода).
+									p	Знания по конфигурациям:<br>
+										span 1С Управление производственным предприятием 1.3; Управление торговлей 10.3/11.2; Бухгалтерия 2.0/3.0; Управление небольшой фирмой 1.5.
 									p О себе:<br> 
-										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
+										span Молодой перспективный специалист.Целеустремленный‚ ответственный‚ креативный‚ имею стремление к профессиональному развитию и обучению‚ не курю, довожу дело до конца.
 									div.image
-										img(src="", alt="")
-										img(src="", alt="")
-										img(src="", alt="")
+										a.grouped_elements(href="assets/img/certificate/first/certificate-1.png" rel="group1")
+											img(src="assets/img/certificate/first/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/first/certificate-1.png" rel="group1")
+											img(src="assets/img/certificate/first/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/first/certificate-1.png" rel="group1")
+											img(src="assets/img/certificate/first/certificate-1.png", alt="")
 								.block-item.photo.flex
-									img(src="assets/img/photo-big-3.png", alt="")
+									img(src="assets/img/photo-big-1.png", alt="")
 									div.flex
-										a(href="#").order Хочу себе этого специалиста
+										a(href="#specialist-1").order.fancy Хочу себе этого специалиста
 						.item
 							.block.flex.block-second
 								.block-item
-									h2 Алексей, 1С программист
+									h2.name Али, Сервис-инженер.
 									p Опыт работы: 
-										span 1.5 года
-									p Обзарование:<br>
-										span Высшее (Бакалавр – Инженер автоматизации).
-									p Средняя продолжительность ведения проектов:<br>
-										span 3 месяца
-									p Специализация:<br>
-										span Управление торговлей (доработка конфигураций, написание программного кода).
-									p О себе:<br> 
-										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
+										span с 2013 г.
+									p 
+										span За время работы получил солидный опыт в сопровождение программных продуктов 1С.
+									p 
+										span Работа на 1-й линии клиентской поддержки способствовала получению необходимых навыков для консультирования пользователей 1С по ведению учёта, настройки программных продуктов под требования клиентов.
+									p 
+										span Успешное внедрение сервисов 1С ИТС доказано полученным статусом нашей организации - "Сертифицированный сервисный партнёр 1С".
+ 
 									div.image
-										img(src="", alt="")
-										img(src="", alt="")
-										img(src="", alt="")
+										a.grouped_elements(href="assets/img/certificate/second/certificate-1.png" rel="group2")
+											img(src="assets/img/certificate/second/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/second/certificate-1.png" rel="group2")
+											img(src="assets/img/certificate/second/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/second/certificate-1.png" rel="group2")
+											img(src="assets/img/certificate/second/certificate-1.png", alt="")
 								.block-item.photo.flex
-									img(src="assets/img/photo-big-3.png", alt="")
+									img(src="assets/img/photo-big-2.png", alt="")
 									div.flex
-										a(href="#").order Хочу себе этого специалиста
+										a(href="#specialist-1").order.fancy Хочу себе этого специалиста
 						.item
 							.block.flex.block-third
 								.block-item
-									h2 Алексей, 1С программист
+									h2.name Сергей, Программист 1С
 									p Опыт работы: 
-										span 1.5 года
-									p Обзарование:<br>
-										span Высшее (Бакалавр – Инженер автоматизации).
+										span 9 месяцев
+									p 
+										span Специализируется на 1С управлении торговлей. Отлично разбирается в управленческом учете.
 									p Средняя продолжительность ведения проектов:<br>
 										span 3 месяца
 									p Специализация:<br>
 										span Управление торговлей (доработка конфигураций, написание программного кода).
 									p О себе:<br> 
-										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
+										span Ценю время свое и клиента. Если берусь за дело, то довожу до конца.
 									div.image
-										img(src="", alt="")
-										img(src="", alt="")
-										img(src="", alt="")
+										a.grouped_elements(href="assets/img/certificate/third/certificate-1.png" rel="group3")
+											img(src="assets/img/certificate/third/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/third/certificate-1.png" rel="group3")
+											img(src="assets/img/certificate/third/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/third/certificate-1.png" rel="group3")
+											img(src="assets/img/certificate/third/certificate-1.png", alt="")
 								.block-item.photo.flex
 									img(src="assets/img/photo-big-3.png", alt="")
 									div.flex
-										a(href="#").order Хочу себе этого специалиста
+										a(href="#specialist-1").order.fancy Хочу себе этого специалиста
 						.item
 							.block.flex.block-fourth
 								.block-item
-									h2 Алексей, 1С программист
+									h2.name Андрей, Программист
 									p Опыт работы: 
-										span 1.5 года
-									p Обзарование:<br>
-										span Высшее (Бакалавр – Инженер автоматизации).
+										span 1 год
 									p Средняя продолжительность ведения проектов:<br>
 										span 3 месяца
 									p Специализация:<br>
-										span Управление торговлей (доработка конфигураций, написание программного кода).
+										span управленческий и регламентированный учет, сложные технические разработки (доработка конфигураций, написание программного кода).
+									p Знания по конфигурациям:
+										span 1С Управление производственным предприятием 1.3; Управление торговлей 10.3/11.2; Бухгалтерия 2.0/3.0; Управление небольшой фирмой 1.5.
 									p О себе:<br> 
-										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
+										span Образование: Высшее (Бакалавр – Инженер автоматизации, Магистр – прикладная информатика).<br>Работаю на качество. Всегда пытаюсь увидеть проблему глазами клиента. Решаю задачи не в "лоб".
 									div.image
-										img(src="", alt="")
-										img(src="", alt="")
-										img(src="", alt="")
+										a.grouped_elements(href="assets/img/certificate/fourth/certificate-1.png" rel="group4")
+											img(src="assets/img/certificate/fourth/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/fourth/certificate-1.png" rel="group4")
+											img(src="assets/img/certificate/fourth/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/fourth/certificate-1.png" rel="group4")
+											img(src="assets/img/certificate/fourth/certificate-1.png", alt="")
 								.block-item.photo.flex
-									img(src="assets/img/photo-big-3.png", alt="")
+									img(src="assets/img/photo-big-4.png", alt="")
 									div.flex
-										a(href="#").order Хочу себе этого специалиста
+										a(href="#specialist-1").order.fancy Хочу себе этого специалиста
 						.item
 							.block.flex.block-fifth
 								.block-item
-									h2 Алексей, 1С программист
+									h2.name Елена, Сертифицированный специалист по сопровождению
 									p Опыт работы: 
-										span 1.5 года
-									p Обзарование:<br>
-										span Высшее (Бакалавр – Инженер автоматизации).
-									p Средняя продолжительность ведения проектов:<br>
-										span 3 месяца
-									p Специализация:<br>
-										span Управление торговлей (доработка конфигураций, написание программного кода).
+										span с 2016 г.
+									p  Сертифицированный специалист по сопровождению:<br>
+										span обеспечение функционирования базы 1С у клиентов и обновление программных продуктов, оперативная поддержка пользователей, в т.ч. консультирование клиентов по работе в программе 1С.
 									p О себе:<br> 
-										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
+										span Всегда нужно внедрять в работу то, что любишь.
 									div.image
-										img(src="", alt="")
-										img(src="", alt="")
-										img(src="", alt="")
+										a.grouped_elements(href="assets/img/certificate/fifth/certificate-1.png" rel="group5")
+											img(src="assets/img/certificate/fifth/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/fifth/certificate-1.png" rel="group5")
+											img(src="assets/img/certificate/fifth/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/fifth/certificate-1.png" rel="group5")
+											img(src="assets/img/certificate/fifth/certificate-1.png", alt="")
 								.block-item.photo.flex
-									img(src="assets/img/photo-big-3.png", alt="")
+									img(src="assets/img/photo-big-5.png", alt="")
 									div.flex
-										a(href="#").order Хочу себе этого специалиста
+										a(href="#specialist-1").order.fancy Хочу себе этого специалиста
 						.item
 							.block.flex.block-sixth
 								.block-item
-									h2 Алексей, 1С программист
+									h2.name Алексей, 1С программист
 									p Опыт работы: 
 										span 1.5 года
 									p Обзарование:<br>
@@ -294,17 +601,20 @@ html(lang="ru")
 									p О себе:<br> 
 										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
 									div.image
-										img(src="", alt="")
-										img(src="", alt="")
-										img(src="", alt="")
+										a.grouped_elements(href="assets/img/certificate/sixth/certificate-1.png" rel="group6")
+											img(src="assets/img/certificate/sixth/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/sixth/certificate-1.png" rel="group6")
+											img(src="assets/img/certificate/sixth/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/sixth/certificate-1.png" rel="group6")
+											img(src="assets/img/certificate/sixth/certificate-1.png", alt="")
 								.block-item.photo.flex
-									img(src="assets/img/photo-big-3.png", alt="")
+									img(src="assets/img/photo-big-6.png", alt="")
 									div.flex
-										a(href="#").order Хочу себе этого специалиста
+										a(href="#specialist-1").order.fancy Хочу себе этого специалиста
 						.item
 							.block.flex.block-seventh
 								.block-item
-									h2 Алексей, 1С программист
+									h2.name Алексей, 1С программист
 									p Опыт работы: 
 										span 1.5 года
 									p Обзарование:<br>
@@ -316,13 +626,16 @@ html(lang="ru")
 									p О себе:<br> 
 										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
 									div.image
-										img(src="", alt="")
-										img(src="", alt="")
-										img(src="", alt="")
+										a.grouped_elements(href="assets/img/certificate/seventh/certificate-1.png" rel="group7")
+											img(src="assets/img/certificate/seventh/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/seventh/certificate-1.png" rel="group7")
+											img(src="assets/img/certificate/seventh/certificate-1.png", alt="")
+										a.grouped_elements(href="assets/img/certificate/seventh/certificate-1.png" rel="group7")
+											img(src="assets/img/certificate/seventh/certificate-1.png", alt="")
 								.block-item.photo.flex
-									img(src="assets/img/photo-big-3.png", alt="")
+									img(src="assets/img/photo-big-7.png", alt="")
 									div.flex
-										a(href="#").order Хочу себе этого специалиста
+										a(href="#specialist-1").order.fancy Хочу себе этого специалиста
 					ul.flex
 						li
 							a(href="#" data-target="#carousel" data-slide-to="0")
@@ -345,9 +658,6 @@ html(lang="ru")
 						li
 							a(href="#" data-target="#carousel" data-slide-to="6")
 								img(src="assets/img/photo-7.png", alt="")
-						li
-							a(href="#")
-									img(src="assets/img/photo-8.png", alt="")
 		section.rates
 			.wrapper
 				h1 Большой выбор тарифов сопровождениедля каждого пользователя
@@ -356,28 +666,47 @@ html(lang="ru")
 						tr
 							th Срок
 							th.blue Стандартный
+								span.question-mark ?
+									span.tooltiptext Tooltip text
 							th.blue Оптимальный
+								span.question-mark ?
+									span.tooltiptext Tooltip text
 							th.blue Ультра
+								span.question-mark ?
+									span.tooltiptext Tooltip text
 						tr
 							th.blue Год
 							th 3 872
+								i.icon-ruble
 							th 7 672
+								i.icon-ruble
 							th 9 672
+								i.icon-ruble
 						tr
 							th.blue Полугодие
 							th 3 983
+								i.icon-ruble
 							th 7 783
+								i.icon-ruble
 							th 9 783
+								i.icon-ruble
 						tr
 							th.blue Квартал
 							th 4 077
+								i.icon-ruble
 							th 7 877
+								i.icon-ruble
 							th 9 877
+								i.icon-ruble
 				.question.flex
 					div
 						h3 Незнаете какой выбрать тариф?
 						p Получите бесплатную консультацию — заполните заявку и мы перезвоним вам!
-					a.order Оставить заявку
+				form.flex
+					input(type="text" placeholder="Имя")
+					input(type="text" placeholder="Телефон")
+					input(type="text" placeholder="Email")
+					input(type="submit" value="Заказать консультацию")
 		section.why-us
 			.wrapper
 				h1 Почему клиенты выбирают<br> нас в течении 15 лет?
@@ -424,7 +753,7 @@ html(lang="ru")
 						div
 							input(type="submit" value="Заказать консультацию")
 							span * гарантия конфиденциальности данных
-		section.how-working
+		section.how-working#how-working
 			.wrapper.flex
 				h1 Как мы работаем
 				span.first Звонок
@@ -446,76 +775,312 @@ html(lang="ru")
 						span более
 						span 62%
 					p наших клиентов рекомендовали нас<br> своим друзьям и знакомым, партнерам и клиентам.
-		section.portfolio.flex
+		section.portfolio.flex#portfolio
 			.wrapper
 				h1 Наши работы
 				p.desc За 15 лет работы нами проделана огромная работа! Выполнено свыше 300 проектов по России. Выполняли работы от простых внедрений до автоматизации крупных торговых/производственных предприятий. Наши клиенты высоко оценивают уровень работ и оказываемый сервис.
-				.tab.flex 
-					span Оптовая и розничная торговля (10)
-					span Производство (6)
-					span Услуги (2)
-				.white-block.flex
-					.block.flex
-						img(src="assets/img/logo-portfolio.png", alt="")
-						div.flex
-							p Группа компаний
-							p «Промышленная безопасность»
-							a(href="#") www.ekoprombez.ru
-						div
-							p.glav-byx Главный бухгалтер
-							p Пирожкова Надежда Петровна
-							p +7 8482 68-50-81
-						.video
-							a(href="#")
-								img(src="assets/img/video.png", alt="")
-					.block.minus
-						h3 Было
-						ul
-							li Велся учет в 1С:Бухгалтерии
-							li Разные виды деятельности велись сотрудниками и информация хранилась только у них
-							li Заявки с новыми клиентами оформлялись специальными документами в файлах
-							li Комплектование групп для обучения производилось в ручном режиме
-							li Задолженность по оперативной деятельности не сходилась с данными в 1С:Бухгалтерии
-							li В отдельных филиалах велся учет отдельно и не связанно с центральным офисом
-							a(href="#") cмотреть все
-					.block.plus
-						h3 Стало
-						ul
-							li Объединен учет всех филиалов в единую систему
-							li Все виды деятельности стали работать по настроенным бизнес-процессам на сервере
-							li Разработана и внедрена уникальная система оформления всех документов в 1С
-							li Внедрена система обучения от заказов до проведения экзаменов и формирования закрывающих документов
-							li Настроен единый контроль за дебиторской задолженностью
-							a(href="#") cмотреть все
-				footer.flex
-					a.see(href="#") Показать еще работы
-					div
-						a(href="#").order Хочу такой же результат
-		section.certificate
-			.wrapper.flex
-				.flex
-					h1 Сертифицированный Сервисный партнер фирмы «1С»!
-					p Для получения качественного сопровождения в Самарской области фирма «1С» рекомендует обращаться в компанию «Виват Интеллект». Компании, обладающие статусом «Сертифициро-ванный Сервисный партнер (Сервис-партнер) (СП) «1С»», являются ведущими партнерами фирмы «1С» в области информационно-технологи-ческого сопровождения 1C и рекомендуются фирмой «1С» при выборе надежного партнера в регионе.<span>Команда разработки 1С</span>
+				ul.tab.flex(role='tablist')
+					li.active(role='presentation')
+						a.link-tab(href='#first', aria-controls='first', role='tab', data-toggle='tab') Оптовая и розничная торговля (<span class="tab1"></span>)
+					li(role='presentation')
+						a.link-tab(href='#second', aria-controls='second', role='tab', data-toggle='tab') Производство (<span class="tab2"></span>)
+					li(role='presentation')
+						a.link-tab(href='#third', aria-controls='third', role='tab', data-toggle='tab') Услуги (<span class="tab3"></span>)
+				div.tab-content
+					#first.tab-pane.active.fade.in(role="tabpanel")
+						.item
+							.white-block.flex
+								div
+								.block.flex
+									img(src="assets/img/logo-portfolio.png", alt="")
+									div.flex
+										p Группа компаний
+										p «Промышленная безопасность»
+										a(href="#") www.ekoprombez.ru
+									div
+										p.glav-byx Главный бухгалтер
+										p Пирожкова Надежда Петровна
+										p +7 8482 68-50-81
+									.video
+										a(href="#")
+											img(src="assets/img/video.png", alt="")
+								.block.minus
+									h3 Было
+									ul
+										li Велся учет в 1С:Бухгалтерии
+										li Разные виды деятельности велись сотрудниками и информация хранилась только у них
+										li Заявки с новыми клиентами оформлялись специальными документами в файлах
+										li Комплектование групп для обучения производилось в ручном режиме
+										li Задолженность по оперативной деятельности не сходилась с данными в 1С:Бухгалтерии
+										li В отдельных филиалах велся учет отдельно и не связанно с центральным офисом
+										a(href="#") cмотреть все
+								.block.plus
+									h3 Стало
+									ul
+										li Объединен учет всех филиалов в единую систему
+										li Все виды деятельности стали работать по настроенным бизнес-процессам на сервере
+										li Разработана и внедрена уникальная система оформления всех документов в 1С
+										li Внедрена система обучения от заказов до проведения экзаменов и формирования закрывающих документов
+										li Настроен единый контроль за дебиторской задолженностью
+										a(href="#") cмотреть все
+						.all-works#collapsePortfolioFirst
+							.item
+								.flex
+									div
+									.block.flex
+										img(src="assets/img/logo-portfolio-2.jpg", alt="")
+										div.flex
+											p Крупнейший поставщик продуктов питания бакалейной и кондитерской продукции на рынке Самарской области
+										div
+											p.glav-byx Директор
+											p Смуглин Иван Васильевич
+											a(href="http://www.djusa.ru/") http://www.djusa.ru/
+											a(href="mailto:mail@mail.ru") mail@mail.ru
+										.video
+											a(href="#")
+												img(src="assets/img/video.png", alt="")
+									.block.minus
+										h3 Было
+										ul
+											li Отсутствие правил ведения базы контрагентов
+											li Стихийное планирование продаж по отделу и каждому менеджеру
+											li Ручной набор документов и ручное исправление
+											li Не соблюдались цены в заказах по заключённым  договорам
+											li Оператор в 1С мог по договоренности с клиентом или сотрудником сделать любые действия с заказом, даже отгрузить должнику и предоставить хорошую цену со скидкой
+											li Сложность контроля возвратных документов
+											li Набор и отпуск товара проводился по накладной без предварительного учёта расхождений по наличию.
+											li Отсутствие контроля за реальной отгрузкой товара со склада и возвратами на склад
+											li Расходились данные о фактическом наличии товара на складе и в 1С
+											li Невозможно настроить прямой обмен с бухгалтерией, бухгалтеры и финансисты работали в разных базах
+											a(href="#") cмотреть все
+									.block.plus
+										h3 Стало
+										ul
+											li Внедрен проект на базе “1С:Управление Торговлей” и “1С:Бухгалтерия предприятия”
+											li Разработана и внедрена система работы с контрагентами с закреплением за торговыми представителями
+											li Внедрена система планирования продаж по каждому показателю
+											li Настроен единый контроль за дебиторской задолженностью
+											li Отслеживаются возвратные документы в 1С
+											li Внедрена адресная и групповая сборка товаров. Увеличена производительность склада. Логистика ускорена на 20%
+											li Оптимизирован и на 80% ускорен процесс работы операторов склада.
+											li На 60% ускорен отпуск товара и обработка складских документов
+											li Снижены ошибки "человеческого фактора" на 85%
+												a(href="#") cмотреть все
+							.item
+								.flex
+									div
+									.block.flex
+										img(src="assets/img/logo-portfolio-3.jpg", alt="")
+										div.flex
+											p Продажа игрушек. Филиалы торговой сети Бегемот находятся в крупных городах России. Численность сотрудников компании более 3500.
+										div
+											p.glav-byx Директор
+											p Смуглин Иван Васильевич
+											a(href="http://www.begemott.ru//") http://www.begemott.ru/
+											a(href="mailto:mail@mail.ru") mail@mail.ru
+										div.company
+											p Группа компаний "Grand Toys" http://www.grand-toys.ru/
+											p Федеральная сеть “БЕГЕМОТ” http://www.begemott.ru/
+											p Торговая сеть “БЕГЕМОТиК”
+											p Торговая сеть “TOY&TOY” http://toyandtoy.ru/
+											p Федеральная оптовая сеть http://игрушки.рф/
+										.video
+											a(href="#")
+												img(src="assets/img/video.png", alt="")
+									.block.minus
+										h3 Было
+										ul
+											li отсутствие единой базы для кадровиков и расчетчиков
+											li Отсутствие единой базы юр. лиц
+											li Расчет зарплаты и кадровый учет велся на версии 7.7 в множестве баз. Не настроен обмен с бухгалтерией по всем проводкам
+											li В филиалах компании в разных городах кадровые данные поступали   запозданием
+											li Выплата по разным банкам и кассам затруднялась и осуществлялась не своевременно
+											a(href="#") cмотреть все
+									.block.plus
+										h3 Стало
+										ul
+											li Внедрен КАМИН:Зарплата для бизнеса, Бухгалтерия Корп
+											li Произведено свыше 200 доработок программы для идеальной отладки работы
+											li Внедрение БИТФИНАНС МСФО (международная система финансовой отчетности) с автоматической трансляцией в РСБУ (Российскую систему бухгалтерского учета)
+											li Интеграция Управленческого учета и бухгалтерского через обмен данными
+											a(href="#") cмотреть все
+										.itogo
+											p В итоге полностью автоматизирована система для кадровиков/расчетчиков.<br> Создана единая база юр. лиц.
+											p Нужен сильный аргумент сюда, к чему все это привело?
+							.item
+								h2 Автоматизация торговой сети «Мир мягкой игрушки»
+								a(href="http://www.partner-fruit.ru/" target="_blank") http://partner-fruit.ru/
+								p.description Фирма занимается розничной торговлей овощами и фруктами.
+								p Для автоматизации учета были установлены программные продукты 1С:Бухгалтерия 8, 1С:Предприятие. Управление Торговлей 8, КАМИН: Расчет заработной платы 3.0.
+								p Специалистами нашей компании был осуществлен ряд доработок в системе учета, с целью оптимизации:
+								p Создание документа «Заказ поставщику Инвойс» с учетом цены на грузовые расходы, которая разбивается пропорционально количеству товаров
+								p Настройка обмена данными между 1С Бухгалтерий, ЗУП, КАМИН, УТ, Банк-клиентом
+								p Перевод программ с платформы 8.1 на 8.2
+								p Создание уникальных ценовых и количественных характеристик товаров
+							.item 	
+								h2 Автоматизация торговой фирмы «Партнер Поволжье»
+								a(href="http://www.grand-toys.ru/" target="_blank") http://www.grand-toys.ru/
+								a(href="http://игрушки.рф/") http://игрушки.рф/
+								p.description Продажа мягких игрушек. Филиалы торговой сети Бегемот находятся в крупных городах России.Численность сотрудников компании более 3500.
+								p Наша компания занималась внедрением программного решения КАМИН:Зарплата для бизнеса. Версия 4.0 ПРОФ. Был выполнен полный перенос данных из предыдущей версии программы КАМИН:Расчет заработной платы 2.0. Отладка корректной работы программы по всем юр.лицам и сотрудникам.
+								p Произведено более 100 доработок для отдела кадров, расчетного отдела, ОтиЗ и т.д.
+							.item
+								h2	Автоматизация торговой сети «Здоровит»
+								a(href="http://www.zdorovit.ru/" target="_blank") http://www.zdorovit.ru/
+								p.description Продажа продукции здорового питания. Филиалы торговой сети находятся в крупных торговых центрах городов Самара и Тольятти.
+								p Для розничной сети внедрен комплект из решений «1С:Управление Торговлей 8» и «1С:Бухгалтерия 8». Произведена настройка обмена между УТ и БП. В конфигурации были настроены различные системы скидок, настроено торговое оборудование. Выполняется консультирование клиента по вопросам работы в программе.
+							.item
+								h2 Автоматизация салона кожи и меха «MONDIAL» в Тольятти
+								a(href="http://www.mondial.ru/" target="_blank") http://www.mondial.ru/
+								p.description Компания «Мондиал-Тольятти» занимается розничной торговлей изделиями из кожи и меха.
+								p Произведена автоматизация бухгалтерского и налогового учета на базе типовой конфигурации "Бухгалтерия предприятия" системы программ "1С:Предприятие 8" в компании "Мондиал-Тольятти".
+								p Компания занимается розничной торговлей изделиями из кожи и меха. Внедренная в организации информационная система обладает широкими аналитическими возможностями, функционал отвечает растущим потребностям предприятия.
+								p На платформе "1С:Предприятие 8" реализованы основные возможности:
+								ul
+									li операции по банку и кассе;
+									li учет основных средств и нематериальных активов;
+									li расчеты с покупателями;
+									li расчеты с подотчетными лицами;
+									li учет необоротных активов;
+									li начисление и выплата заработной платы, расчет обязательных пенсионных взносов;
+									li учет валютных операций;
+									li расчеты с бюджетом и другие.
+								p С учетом специфики предприятия произведена настройка и обучение сотрудников компании работе с новой системой учета, реализованы необходимые схемы учета товародвижения и применения систем налогообложения. Специалистами компании "ВИВАТ ИНТЕЛЛЕКТ" также проведены настройки и сделано обновление конфигурации. Ведется комплекс услуг по консультационно-технологическому обслуживанию.
+							.item
+								h2 Автоматизация магазина фирменной джинсовой одежды «Levis» в Тольятти
+								a(href="http://www.levi.com/" target="_blank") http://www.levi.com/
+								p.description Реализация джинсовой одежды марки «Levis».
+								p Автоматизации магазина джинсовой одежды «Levis» была выполнена на базе программного продукта «1С:Розница 8». программа позволила решить ряд важных задач стоящих перед автоматизацией торгового бизнеса. Автоматизированы важные процессы и операции такие как: Приход товаров на склады магазина, реализация товаров, перемещение товаров между складами магазинов, торговля комплектами товаров, использование процентных скидок по дисконтным картам. Специалистами нашей компании было подключено и настроено торговое оборудование.
+							.item
+								h2 Автоматизация филиалов сети магазинов «Forward»
+								a(href="http://www.forward-sport.ru/" target="_blank") http://www.forward-sport.ru/
+								p.descriptionРеализация спортивной одежды марки «Forward».
+								p С целью автоматизации торгового бизнеса к нам обратилась фирма только планирующая открытие сети магазинов спортивной одежды марки «Forward» в городе Тольятти.
+								p Проведя Экспресс-анализ фирмы и установив конечные цели автоматизации, нашей компанией было предложено несколько вариантов для автоматизации торгового бизнеса. Для компании заказчика было подобрано оборудование и программное обеспечение, а также была представлена полная смета предстоящих затрат на автоматизацию сети из двух магазинов.
+								p Для автоматизации торгового бизнеса компания заказчик выбрал программное решение «1С:Розница 8». Данное программное решение было доставлено и установлено в двух магазинах фирменной одежды "Forward". Было подключено и настроено торговое оборудование: сканеры штрих-кода, ридеры магнитных карт, чековые принтеры.
+								p Программный продукт позволил автоматизировать важные процессы и операции такие как: Приход товаров на склады магазина, реализация товаров, перемещение товаров между складами магазинов, торговля комплектами товаров, использование процентных скидок по дисконтным картам. Нашими сотрудниками было установлено и настроено торговое оборудование.
+							.item
+								h2 Автоматизация сети аптек «САЛЮС» в Тольятти
+								p.description Компания «САЛЮС» занимается розничной торговлей медикаментами. В городе Тольятти несколько филиалов аптек этой организации.
+								p Специалисты нашей компании наладили четкий учет по каждой из аптек и по предприятию в целом. Автоматизация была выполнена на базе двух программных продуктов. «1С:Бухгалтерия 8» и «1С:Управление торговлей 8». С учетом специфики предприятия были выполнены ряд доработок в программы, было проведено обучение сотрудников компании работе с системой учета, реализованы необходимые схемы учета товародвижения и применения систем налогообложения. Специалистами компании "ВИВАТ ИНТЕЛЛЕКТ" также проведены настройки и сделано обновление конфигурации. Ведется комплекс услуг по консультационно-технологическому обслуживанию.
+						footer.flex
+							button.see Показать еще работы
+							div
+								a(href="#portfolio-form").order.fancy Хочу такой же результат
+					#second.tab-pane.fade.all-works(role="tabpanel")
+						.item
+							h2	Автоматизация производственной компании «БетонМобил»
+							a(href="http://betonmobil.ru/" target="_blank") http://betonmobil.ru/
+							p.description Производство бетона высокого качества.
+							p Внедрение «1С:Бухгалтерии 8» с интеграцией производственной программы L-Express для рецептур и отгрузки на БРУ.
+							p В компании установлены следующие программные продукты:
+							p «1С:Бухгалтерия 8 ПРОФ»
+							p «1С:Зарплата и Управление Персоналом 8».
+							p Специалистами ООО «Виват Интеллект» был настроен бухгалтерский, налоговый учет. Выполнена настройка обмена данными бухгалтерской и зарплатной программы. Было выполнено создание уникальной обработки, позволяющей обмениваться данными с применяемым на производстве программно-аппаратным комплексом БРУ L-Express в режиме on-line. 
+						.item
+							h2	Автоматизация производства запчастей в «Спец-Автопласт»
+							a(href="http://www.sp-avtoplast.ru/" target="_blank") http://www.sp-avtoplast.ru/
+							p.description Компания «Спец-Автопласт» занимается производством и оптово-розничной торговлей запчастями.
+							p  В организации используется 1С:Производство и 1С:Бухгалтерия. Нашими специалистами был полностью автоматизирован процесс учета на производстве и продаже автозапчастей. Был осуществлен ряд специфических доработок в программы по заданиям заказчика. Было подключено и настроено специальное оборудование сканеры штрих-кодов и Терминалы сбора данных, облегчающие учет поступления, производства и отгрузки в организации.
+						.all-works#collapsePortfolioSecond
+							.item
+									h2 Автоматизация производственной организации «СтройКомплект»
+									a(href="http://www.doka-tlt.ru/") http://www.doka-tlt.ru/
+									p.description Фирма занимается производством и реализацией строительных материалов.
+									p Внедрение «1С:Управление небольшой фирмой 8».
+									p Была произведена настройка программы и создана обработка, рассчитывающая заработную плату менеджеров, в зависимости от:
+									p количества проданной продукции
+									p группы товаров
+									p статус покупателя (юридическое или физическое лицо)
+									p оплаты проданного товара.
+							.item
+								h2 Автоматизация производственной фирмы «НОРМА ГРУП СНГ»
+								a(href="http://www.normagroup.com") http://www.normagroup.com
+								p.description Фирма занимается производством и реализацией автомобильных запчастей иностранного производства.
+								p Для автоматизации учета в организации был установлен ранее программный продукт 1С:Предприятие 8.
+								p Управление Производственным Предприятием для 10 польз.+ Клиент сервер.
+								p Специалисты нашей организации произвели настройку дистрибьюторского центра и склада временного хранения в г. Москва. В программе настроена загрузка плана закупок, заказов, настроена выгрузка заказов поставщику.
+								p Настройка бухгалтерского и налогового учета, настройка производственного учета, выпуск продукции по спецификации и заказам на производство. Реализовано планирование закупок.
+								p Доработка, с обучение персонала, импорта цен из иностранной программы.
+								p План-фактный анализ продаж. Настройка импорта планов продаж.
+								p Полная автоматизация отдела логистики методом расчета рекомендуемого объема закупок.
+								p Настройка автоматизации перевозки сборных грузов. Введение заказа на перевозку формирующегося на основании заказа покупателя и заказа поставщику, с учетом товаров находящихся на складах временного хранения.
+								p Нормализация нормативно-справочной информации. Настройка учета по сериям/характеристикам, импорт данных из иностранной программы. Настройка оптимальных значений заказов.
+							.item
+								h2 Автоматизация производственной фирмы «ТВ Трейд»
+								a(href="http://tegra.ru/") http://tegra.ru/
+								p.description Фирма занимается производством и реализацией автозапчастей и строительных материалов.
+								p Для автоматизации учета в организации была ранее приобретена программа 1С:Комплексная автоматизация 8. Установлена 1С:Бухгалтерия 8 и 1С:Предприятие 8. Управление Торговлей.
+								p Специалистами Виват Интеллект был настроен обмен между БП и УТ. Была выполнена настройка оптовой торговли, выполнены доработки по адресному хранению. Доработки по формированию отчетов по дебиторской задолженности с контролем дней / суммы / лимитов.
+								p Настроен обмен с аналитическими системами для формирования закупок. («Axpta») Загрузка заказов покупателей и заказов поставщикам.
+								p Настроено резервное ночное копирование базы данных.
+								p Разработана и настроена система “Импорт заказов интернет магазинов в 1С: Управление Торговлей 8.2”.
+								p Настроена система бизнес логики формировании, обработки и сборки на складе заказов покупателей в 1С: Управление Торговлей 8.2.
+							.item
+								h2 Автоматизация торгово-производственной фирмы «Техно-Полимер»
+								a(href="http://tp163.ru/") http://tp163.ru/
+								p Организация занимается оптовой торговлей запчастями.
+								p Для автоматизации учета ранее был установлен комплект из нескольких программных продуктов:
+								p 1С:Бухгалтерия 8, 1С:Зарплата и управление персоналом 8, 1С:Управление торговлей 11.
+								p Для модернизации системы учета были осуществлены следующие доработки:
+								p Перенос баз данных из версии 7.7 в версию 8.2
+								p Наладка учета в Бухгалтерии 8.2 и ЗУП (чтобы все операции, в том числе и Закрытие месяца выполнялись автоматически, минимализация операций, добавленных вручную)
+								p Создание внешних печатных форм к различным стандартным документам Бухгалтерии
+								p Создание калькулятора, рассчитывающего и создающего документы по списанию материалов на произведенную продукцию
+								p Создание обработок, позволяющих корректно закрывать в конце месяца затраты внутри счетов 20 и 25 по номенклатурным группам или подразделениям (не мешает последующему автоматическому закрытию месяца программой)
+								p Установка Сервера 1с Предприятия (увеличение скорости работы программ 1С)
+								p Создание обработок, позволяющих формировать отчеты в соответствии с пожеланиями заказчика
+								p Внедрение ордерного склада с помещениями и складскими ячейками с использованием серий (для контроля даты изготовления продукции).
+								p Настройка политики наполняемости складских ячеек по видам товара и габаритам.
+								p Создание обработки по отбору товара  из ячеек с учетом серий. 
+						footer.flex
+							button.see Показать еще работы
+							div
+								a(href="#portfolio-form").order.fancy Хочу такой же результат
+					#third.tab-pane.fade.all-works(role="tabpanel")
+						.item
+							h2 Автоматизация управляющей компании «Лада Фарм» г.Тольятти
+							a(href="http://lada-farm-u.narod.ru/") http://lada-farm-u.narod.ru/
+							p.description Управляющая компания занимается жилищно-коммунальными услугами в городе Тольятти с 2008 года.
+							p В 2010 году руководством Управляющей компании было принято решение о модернизации своей деятельности с помощью более новой и совершенной программы. После обращения в нашу организацию был проведен экспресс-анализа деятельности управляющей компании, и был предложен ряд программных решений, с помощью которых можно автоматизировать бизнес-процессы управляющей компании.
+							p Ранее бизнес-процессы были автоматизированы с помощью программного решения фирмы "Инфокрафт". Но после того как Управляющая компания перешла на "1С:Предприятие 8", возникла необходимость переводить учет по ЖКХ в другую программу. Руководством компании был выбран программный продукт "Айлант:Управление ЖКХ ПРОФ". Программа была установлена на 5 рабочих мест. Выполнен перенос всех данных из ранее использовавшейся в организации программы Инфокрафт: Расчет квартплаты. Набор конфигураций для "1С:Предприятие 7.7".
+							p Новый программный продукт очень прост и интуитивно понятен в использовании. Было проведено обучение пользователей работе в новой программе.
+							p Программа позволила решить такие задачи как: учет лицевых счетов, учет жилого фонда, начисление и расчет коммунальных услуг, расчет льгот, субсидий с учетом различных типов льготников, учет расчетов с поставщиками коммунальных услуг, подготовка всех документов. Также программа позволяет вести бухгалтерский и налоговый учет.
+						.all-works#collapsePortfolioThird
+							.item
+								h2 Автоматизация  ООО "Системы сертификации и охраны труда"
+								p.description Предоставление услуг по сертификации охраны труда организаций.
+								p Автоматизации была выполнена на базе программного продукта «1С:УНФ». Дополнительно к основному функционалу программы, был разработан механизм задач пользователям на основе заказов покупателей, благодаря которому можно отслеживать всю цепочку от выставления коммерческого предложения до завершения работ по заказу. В механизм были добавлены оповещения и рассылки ответственных лиц, специальные формы для удобной работы пользователей с механизмом задач.
+						footer.flex
+							button.see Показать еще работы
+							div
+								a(href="#portfolio-form").order.fancy Хочу такой же результат
+		section.our-team#team
+			.wrapper
+				h1 Наша команда
+				#carousel-2.carousel.slide.carousel-fade(data-ride='carousel')
+					.carousel-inner
+						.active.item
+							img(src="assets/img/slider.png", alt="")
+						.item
+							img(src="assets/img/slider.png", alt="")
+						.item
+							img(src="assets/img/slider.png", alt="")
+					a.carousel-control.left(href='#carousel-2', data-slide='prev')
+						i.icon-left-arrow
+					a.carousel-control.right(href='#carousel-2', data-slide='next')
+						i.icon-right-arrow
 		section.review
 			.wrapper.flex
 				.block
 					p Создавая свою компанию ВИВАТ ИНТЕЛЛЕКТ в 2008 году, я стремился к формированию круга единомышленников, объединенных одной идеей - разработкой и сопровождением 1С в самых комфортных для специалиста и клиента условиях. 
-					p Это позволяет совместно развиваться и получать заряд энергии от победы в результате каждой задачи, эйфории от удовлетворения результатом клиента для следующих побед. Каждая победа должна быть вознаграждена!
-		section.our-team
-			h1 Наша команда
-			#carousel.carousel.slide.carousel-fade(data-ride='carousel')
-				.carousel-inner
-					.active.item
-						img(src="assets/img/slider.png", alt="")
-					.item
-						img(src="assets/img/slider.png", alt="")
-					.item
-						img(src="assets/img/slider.png", alt="")
-				a.carousel-control.left(href='#carousel', data-slide='prev')
-					img(src="assets/img/left-arrow.svg", alt="")
-				a.carousel-control.right(href='#carousel', data-slide='next')
-					img(src="assets/img/right-arrow.svg", alt="")
-		section.faq
+					p Это позволяет совместно развиваться и получать заряд энергии от победы в результате каждой задачи, эйфории от удовлетворения результатом клиента для следующих побед. Каждая <button ata-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">победа <i class="icon-share"></i></button> должна быть вознаграждена!
+		section.certificate#certificate
+			.wrapper.flex
+				.flex
+					h1 Сертифицированный Сервисный партнер фирмы «1С»!
+					p Для получения качественного сопровождения в Самарской области фирма «1С» рекомендует обращаться в компанию «Виват Интеллект». Компании, обладающие статусом «Сертифициро-ванный Сервисный партнер (Сервис-партнер) (СП) «1С»», являются ведущими партнерами фирмы «1С» в области информационно-технологи-ческого сопровождения 1C и рекомендуются фирмой «1С» при выборе надежного партнера в регионе.<span>Команда разработки 1С</span>
+		section.faq#faq
 			.wrapper
 				h1 F.A.Q
 				#accordion.panel-group(role='tablist', aria-multiselectable='true')
@@ -525,52 +1090,62 @@ html(lang="ru")
 								| Ваши услуги стоят дорого?
 					#collapseOne(role='tabpanel', aria-labelledby='headingOne')
 						.panel-body
-							| Да, наши услуги стоят дороже, чем заказывать у Фрилансера. Но наша ценность заключается в том, что мы закрываем полный спектр задач, которые возникают у клиентов. На оказываемый спектр услуг мы даем гарантию 1 год . <a href="#">Заполните заявку</a> и мы поможем подобрать для вас оптимальное решение.
+							| Да, наши услуги стоят дороже, чем заказывать у Фрилансера. Но наша ценность заключается в том, что мы закрываем полный спектр задач, которые возникают у клиентов. На оказываемый спектр услуг мы даем гарантию 1 год. <a class="fancy" href="#faq-form">Заполните заявку</a> и мы поможем подобрать для вас оптимальное решение.
 					#headingThree(role='tab')
 						h4.panel-title
 							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
 								| Есть готовые решения для моего(нашего) бизнеса?
 					#collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
 						.panel-body
-							| 
+							| Да у нас есть готовые коробочные решения. <a class="fancy" href="#faq-form">Заполните заявку</a> и мы поможем вам подобрать оптимальный вариант
 					#headingFour(role='tab')
 						h4.panel-title
 							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
 								| Сколько времени займет решение моих задач?
 					#collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
 						.panel-body
-							| 
+							| Затраченное время зависит от поставленной задачи. Для того чтобы узнать точное время заполните заявку и мы скажем примерное время исполнение Вашей задачи
 					#headingFive(role='tab')
 						h4.panel-title
 							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
 								| Я пользуюсь услугами своего специалиста фрилансера, зачем мне работать с вами?
 					#collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
 						.panel-body
-							| 
+							| Услуги фрилансера как правило выбирают из-за дешевизны работ. Это пожалуй главный и единственный плюс. Но с этим вы получаете целый букет недостатков:
+							ul
+								li ФЛ может накосячить и убежать
+								li ФЛ не несет никакой ответственности за свою работу
+								li ФЛ не гарантирует качества своей работы
+								li ФЛ может "слить" все Ваши секреты конкурентам, и его даже не поймаешь на этом
+								li ФЛ может сорвать все сроки
+							| Этот список можно продолжать дальше. Но если вы хотите получить действительно качественную работу с гарантией и сервисным обслуживанием 24/7, то <a class="fancy" href="#faq-form">заполните заявку</a> и мы поможем подобрать для Вас оптимальный вариант.
 					#headingSix(role='tab')
 						h4.panel-title
 							a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
 								| Кому мы не подходим
 					#collapseSix.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
 						.panel-body
-							| 
-		section.contact
-			.wrapper
-				h2 Контактные информация
-				p.ooo ООО «ИНТЭС групп»
-				.flex.adress
-					p Адрес:      
-					p Тольятти, улица Спортивная,<br> д. 6, подъезд 2/2, 5 этаж
-				.flex.work
-					p Режим работы: 
-					p с 9:00 до 18:00
-				.flex.phone
-					p Телефоны:
-					p +7 (8482) 55-73-98
-				.flex.email
-					p E-mail:     
-					p
-						a(href="#") info@vivat-iq.ru
+							| Мы обговариваем сроки реализации проекта и четко их соблюдаем, выдаем 3-х летнюю гарантию на выполненные работы и дарим доп. часы программиста. Вам подходит этот вариант - <a class="fancy" href="#faq-form">заполните заявку</a> на бесплатную консультацию 
+							p Если вы хотите долго, очень дешево, без реальных гарантий -  обратитесь к фрилансерам.
+		section.contact#contact.flex
+			#YMapsID(style="width: 100%; height: 400px;")
+			.block
+				.wrapper
+					h2 Контактные информация
+					p.ooo ООО «ИНТЭС групп»
+					.flex.adress
+						p Адрес:      
+						p Тольятти, улица Спортивная,<br> д. 6, подъезд 2/2, 5 этаж
+					.flex.work
+						p Режим работы: 
+						p с 9:00 до 18:00
+					.flex.phone
+						p Телефоны:
+						p +7 (8482) 55-73-98
+					.flex.email
+						p E-mail:     
+						p
+							a(href="#") info@vivat-iq.ru
 		section.question
 			.wrapper
 				.flex
@@ -599,7 +1174,33 @@ html(lang="ru")
 				div.company
 					p Компания разработчик 
 					a(href="http://lidkom.ru/") Lidkom.ru
-				
+		//Specilist 
+		div.form-specialist#specialist-1(style="display: none")
+			form.flex
+					div.flex
+						input(type="text" placeholder="Имя")
+						input(type="text" placeholder="Телефон")
+						input(type="text" placeholder="Email")
+					input(type="submit" value="Заказать консультацию")
+		//Faq
+		div.form-specialist#faq-form(style="display: none")
+			form.flex
+					div.flex
+						input(type="text" placeholder="Имя")
+						input(type="text" placeholder="Телефон")
+						input(type="text" placeholder="Email")
+					input(type="submit" value="Заказать консультацию")
+		//Portfolio
+		div.form-specialist#portfolio-form(style="display: none")
+			form.flex
+					div.flex
+						input.name-form(type="hidden")
+						input(type="text" placeholder="Имя")
+						input(type="text" placeholder="Телефон")
+						input(type="text" placeholder="Email")
+					input(type="submit" value="Заказать консультацию")
 
 
-		script(type="text/babel" src="assets/js/main.js")
+
+
+		script(src="assets/js/main.js")
