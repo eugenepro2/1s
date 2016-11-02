@@ -59,7 +59,7 @@ body
 		border-radius: 6px
 		position: absolute
 		z-index: 1
-		bottom: -5px
+		bottom: -15px
 		left: 27px
 	&:hover .tooltiptext
 		visibility: visible
@@ -332,8 +332,8 @@ section.introduction
 			padding-bottom: 45px
 		input[type="text"]
 			background-color: rgba(255, 255, 255, 0.5)
-			border: 1px solid #000
-			border-radius: 2px
+			border: 1px solid #999
+			border-radius: 10px
 			margin: auto
 			width: 220px
 			padding: 10px
@@ -359,26 +359,62 @@ section.introduction
 				text-decoration: none
 				background: #1194ca
 section.guarantee
-		background: url('/assets/img/guarantee-bg.png') no-repeat
-		height: 500px
-		background-size: cover
-		background-position: 50% 50%
-		h1
+	background: url('/assets/img/guarantee-bg.png') no-repeat
+	height: 500px
+	background-size: cover
+	background-position: 50% 50%
+	h1
+		color: #fff
+		text-align: center
+		padding: 70px 0 60px
+	div.block
+		width: 33% 
+		div.img
+			height: 150px
+			img
+				margin: auto
+		p
 			color: #fff
+			font-size: 18px
+			font-family: $gothambold
+			line-height: 1.5
 			text-align: center
-			padding: 70px 0 60px
-		div.block
-			width: 33% 
-			div.img
-				height: 150px
-				img
-					margin: auto
-			p
-				color: #fff
-				font-size: 18px
-				font-family: $gothambold
-				line-height: 1.5
-				text-align: center
+	.first
+		top: 30px
+		right: -58px
+		width: 232px
+		bottom: initial
+		left: initial
+		&::after
+			top: initial
+			right: initial
+			bottom: 100%
+			left: 68.5%
+			border-color: transparent transparent white transparent
+	.second
+		top: 30px
+		right: -43px
+		width: 376px
+		bottom: initial
+		left: initial
+		&::after
+			top: initial
+			right: initial
+			bottom: 100%
+			left: 84.5%
+			border-color: transparent transparent white transparent
+	.third
+		top: 30px
+		right: -43px
+		width: 376px
+		bottom: initial
+		left: initial
+		&::after
+			top: initial
+			right: initial
+			bottom: 100%
+			left: 84.5%
+			border-color: transparent transparent white transparent
 section.accompaniment
 	background: #e6e6e6
 	padding-top: 90px
@@ -549,11 +585,44 @@ section.rates
 				left: 6px
 			span.question-mark
 				background-color: #ccc
-				padding-top: 2px
+				padding-top: 0px
 				.tooltiptext
 					border: 1px solid #ccc
 				.tooltiptext::after
-					border-color: transparent #ccc transparent transparent
+					border-color: #ccc transparent transparent transparent
+			.first
+				top: initial
+				right: -102px
+				width: 332px
+				bottom: 30px
+				left: initial
+				&::after
+					top: 108%
+					right: initial
+					bottom: initial
+					left: 65%
+			.second
+				top: initial
+				right: -102px
+				width: 332px
+				bottom: 30px
+				left: initial
+				&::after
+					top: 108%
+					right: initial
+					bottom: initial
+					left: 65%
+			.third
+				top: initial
+				right: -102px
+				width: 365px
+				bottom: 30px
+				left: initial
+				&::after
+					top: 105%
+					right: initial
+					bottom: initial
+					left: 68%
 	form
 		p
 			font-size: 18px
@@ -564,7 +633,7 @@ section.rates
 		input[type="text"]
 			background-color: rgba(255, 255, 255, 0.5)
 			border: 1px solid #999
-			border-radius: 2px
+			border-radius: 10px
 			margin: auto
 			width: 220px
 			padding: 10px
@@ -655,7 +724,7 @@ section.free-consultation
 				margin: auto
 				input[type="text"]
 					border: 1px solid white
-					border-radius: 2px
+					border-radius: 10px
 					background: transparent
 					padding: 10px
 					margin: auto
@@ -1093,7 +1162,7 @@ section.question
 			margin: auto
 			input[type="text"], textarea, button
 				border: 1px solid white
-				border-radius: 2px
+				border-radius: 10px
 				background: transparent
 				padding: 10px
 				margin: auto
@@ -1141,6 +1210,7 @@ section.question
 				position: relative
 				color: #fff
 				bottom: 41px
+				border-radius: 10px
 				left: 179px
 				width: 100px
 				height: 35px
@@ -1239,7 +1309,7 @@ footer
 		input[type="text"]
 			background-color: rgba(255, 255, 255, 0.5)
 			border: 1px solid #000
-			border-radius: 2px
+			border-radius: 10px
 			margin: auto
 			width: 180px
 			padding: 10px

@@ -89,8 +89,7 @@ $(function() {
   //Calculator
   $('.calculator:visible').on('change', function(){
     var sum = 0;
-    console.log("test");
-    $('.calculator:visible:checked').each(function(index, item){
+    $('.calculator:checked').each( function(index, item){
       sum += $(item).data('value');
     });
     console.log(sum);

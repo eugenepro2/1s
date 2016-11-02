@@ -59,9 +59,9 @@ html(lang="ru")
 					h2 Заполните заявку
 					p и получите экспресс-аудит Вашей задачи с 3 вариантами решения
 					.flex
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Email")
-						input(type="submit" value="Заказать консультацию")
+						input(type="text" placeholder="Имя" required)
+						input(type="text" placeholder="Email" required)
+						input(type="submit" value="Заказать консультацию" required)
 		section.counter.flex
 			.wrapper.flex
 				.block.flex
@@ -178,10 +178,10 @@ html(lang="ru")
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя")
-								input(type="text" placeholder="Телефон")
-								input(type="text" placeholder="Email")
-								input(type="submit" value="Заказать консультацию")
+								input(type="text" placeholder="Имя" required)
+								input(type="text" placeholder="Телефон" required)
+								input(type="text" placeholder="Email" required)
+								input(type="submit" value="Заказать консультацию" required)
 					#collapseSecond.collapse
 						.products
 							p.h2 Цены 1С: Предприятие 2
@@ -253,9 +253,9 @@ html(lang="ru")
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя")
-								input(type="text" placeholder="Телефон")
-								input(type="text" placeholder="Email")
+								input(type="text" placeholder="Имя" required)
+								input(type="text" placeholder="Телефон" required)
+								input(type="text" placeholder="Email" required)
 								input(type="submit" value="Заказать консультацию")
 					#collapseThird.collapse
 						.products
@@ -322,9 +322,9 @@ html(lang="ru")
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя")
-								input(type="text" placeholder="Телефон")
-								input(type="text" placeholder="Email")
+								input(type="text" placeholder="Имя" required)
+								input(type="text" placeholder="Телефон" required)
+								input(type="text" placeholder="Email" required)
 								input(type="submit" value="Заказать консультацию")
 					#collapseFourth.collapse
 						.products
@@ -391,9 +391,9 @@ html(lang="ru")
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя")
-								input(type="text" placeholder="Телефон")
-								input(type="text" placeholder="Email")
+								input(type="text" placeholder="Имя" required)
+								input(type="text" placeholder="Телефон" required)
+								input(type="text" placeholder="Email" required)
 								input(type="submit" value="Заказать консультацию")
 					#collapseFifth.collapse
 						.products
@@ -460,9 +460,9 @@ html(lang="ru")
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя")
-								input(type="text" placeholder="Телефон")
-								input(type="text" placeholder="Email")
+								input(type="text" placeholder="Имя" required)
+								input(type="text" placeholder="Телефон" required)
+								input(type="text" placeholder="Email" required)
 								input(type="submit" value="Заказать консультацию")
 		section.guarantee#guarantee
 			.wrapper
@@ -473,19 +473,19 @@ html(lang="ru")
 							img(src="assets/img/guarantee-1.png", alt="")
 						p Гарантия выполнения<br> работ в срок
 							span.question-mark ?
-								span.tooltiptext Tooltip text
+								span.tooltiptext.first Жестко регламентируем сроки выполнения работ. В случае срыва срока, выплачиваются штрафные санкции
 					.block
 						.img.flex
 							img(src="assets/img/guarantee-2.png", alt="")
 						p 1 год бесплатного<br> сервисного обслуживания
 							span.question-mark ?
-								span.tooltiptext Tooltip text
+								span.tooltiptext.second В течении года осуществляем поддержку созданного продукта. Вы всегда будете уверены в том, что ваш продукт защищен от ошибок, регулярно создаются архивы, анализируются разные способы решения задач.
 					.block
 						.img.flex
 							img(src="assets/img/guarantee-3.png", alt="")
 						p 3 месяца бесплатного<br> сопровождения при покупке<br> нового продукта
 							span.question-mark ?
-								span.tooltiptext Tooltip text
+								span.tooltiptext.third В течении года осуществляем поддержку создан
 		section.accompaniment
 			.wrapper
 				h1 Сопровождение 1С с интеллектом
@@ -739,13 +739,15 @@ html(lang="ru")
 							th Срок
 							th.blue Стандартный
 								span.question-mark ?
-									span.tooltiptext Tooltip text
+									span.tooltiptext.first Данный вариант подходит для тех, кто не первый год работает в программных продуктах системы 1С, которым необходима постоянная помощь в текущей работе.
 							th.blue Оптимальный
 								span.question-mark ?
-									span.tooltiptext Tooltip text
+									span.tooltiptext.second Идеально подойдет для новой организации, которой необходима настройка и доработка. Легальный доступ к обновлениям и минимальный набор услуг.
 							th.blue Ультра
 								span.question-mark ?
-									span.tooltiptext Tooltip text
+									span.tooltiptext.third
+										p VIP-пакет, подойдет для тех кто ценит высокую скорость решения задач, поставленная задача будет решаться в течении 5 раб. часов.
+										p Поможем создать для Вас креативные отчеты, так же поможем сформироваться и сдать отчеты. За вами будет прикреплен личный специалист, который будет предугадывать ваши
 						tr
 							th.blue Год
 							th 3 872
@@ -775,10 +777,10 @@ html(lang="ru")
 						h3 Незнаете какой выбрать тариф?
 						p Получите бесплатную консультацию — заполните заявку и мы перезвоним вам!
 				form.flex
-					input(type="text" placeholder="Имя")
-					input(type="text" placeholder="Телефон")
-					input(type="text" placeholder="Email")
-					input(type="submit" value="Заказать консультацию")
+					input(type="text" placeholder="Имя" required)
+					input(type="text" placeholder="Телефон" required)
+					input(type="text" placeholder="Email" required)
+					input(type="submit" value="Заказать консультацию" required)
 		section.why-us
 			.wrapper
 				h1 Почему клиенты выбирают<br> нас в течении 15 лет?
@@ -820,8 +822,8 @@ html(lang="ru")
 			form
 				.wrapper.flex
 					div.flex
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Email")
+						input(type="text" placeholder="Имя" required)
+						input(type="text" placeholder="Email" required)
 						div
 							input(type="submit" value="Заказать консультацию")
 							span * гарантия конфиденциальности данных
@@ -1227,14 +1229,14 @@ html(lang="ru")
 						span.guarantee * гарантия конфиденциальности данных
 						img.line(src="assets/img/line.png", alt="")
 					form
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Email")
-						input(type="text" placeholder="Телефон")
+						input(type="text" placeholder="Имя" required)
+						input(type="text" placeholder="Email" required)
+						input(type="text" placeholder="Телефон" required)
 						button(type="button")
 						a.button 
 							span обзор
 						input(type="file" placeholder="Файл")
-						textarea(placeholder="Сообщение")
+						textarea(placeholder="Сообщение" required)
 						input(type="submit" placeholder="Получить")
 		footer
 			.wrapper.flex
@@ -1250,26 +1252,26 @@ html(lang="ru")
 		div.form-specialist#specialist-1(style="display: none")
 			form.flex
 					div.flex
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Телефон")
-						input(type="text" placeholder="Email")
+						input(type="text" placeholder="Имя" required)
+						input(type="text" placeholder="Телефон" required)
+						input(type="text" placeholder="Email" required)
 					input(type="submit" value="Заказать консультацию")
 		//Faq
 		div.form-specialist#faq-form(style="display: none")
 			form.flex
 					div.flex
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Телефон")
-						input(type="text" placeholder="Email")
+						input(type="text" placeholder="Имя" required)
+						input(type="text" placeholder="Телефон" required)
+						input(type="text" placeholder="Email" required)
 					input(type="submit" value="Заказать консультацию")
 		//Portfolio
 		div.form-specialist#portfolio-form(style="display: none")
 			form.flex
 					div.flex
 						input.name-form(type="hidden")
-						input(type="text" placeholder="Имя")
-						input(type="text" placeholder="Телефон")
-						input(type="text" placeholder="Email")
+						input(type="text" placeholder="Имя" required)
+						input(type="text" placeholder="Телефон" required)
+						input(type="text" placeholder="Email" required)
 					input(type="submit" value="Заказать консультацию")
 
 

@@ -91,7 +91,7 @@ body
 {
     position: absolute;
     z-index: 1;
-    bottom: -5px;
+    bottom: -15px;
     left: 27px; 
 
     visibility: hidden;
@@ -588,8 +588,8 @@ section.introduction form input[type='text']
     margin: auto;
     padding: 10px; 
 
-    border: 1px solid #000;
-    border-radius: 2px;
+    border: 1px solid #999;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, .5);
 }
 section.introduction form input[type='submit']
@@ -663,6 +663,60 @@ section.guarantee div.block p
     text-align: center; 
 
     color: #fff;
+}
+section.guarantee .first
+{
+    top: 30px;
+    right: -58px;
+    bottom: initial;
+    left: initial; 
+
+    width: 232px;
+}
+section.guarantee .first::after
+{
+    top: initial;
+    right: initial;
+    bottom: 100%;
+    left: 68.5%;
+
+    border-color: transparent transparent white transparent;
+}
+section.guarantee .second
+{
+    top: 30px;
+    right: -43px;
+    bottom: initial;
+    left: initial; 
+
+    width: 376px;
+}
+section.guarantee .second::after
+{
+    top: initial;
+    right: initial;
+    bottom: 100%;
+    left: 84.5%;
+
+    border-color: transparent transparent white transparent;
+}
+section.guarantee .third
+{
+    top: 30px;
+    right: -43px;
+    bottom: initial;
+    left: initial; 
+
+    width: 376px;
+}
+section.guarantee .third::after
+{
+    top: initial;
+    right: initial;
+    bottom: 100%;
+    left: 84.5%;
+
+    border-color: transparent transparent white transparent;
 }
 
 section.accompaniment
@@ -963,7 +1017,7 @@ section.rates .white-block table i.icon-ruble
 }
 section.rates .white-block table span.question-mark
 {
-    padding-top: 2px; 
+    padding-top: 0; 
 
     background-color: #ccc;
 }
@@ -973,7 +1027,55 @@ section.rates .white-block table span.question-mark .tooltiptext
 }
 section.rates .white-block table span.question-mark .tooltiptext::after
 {
-    border-color: transparent #ccc transparent transparent;
+    border-color: #ccc transparent transparent transparent;
+}
+section.rates .white-block table .first
+{
+    top: initial;
+    right: -102px;
+    bottom: 30px;
+    left: initial; 
+
+    width: 332px;
+}
+section.rates .white-block table .first::after
+{
+    top: 108%;
+    right: initial;
+    bottom: initial;
+    left: 65%;
+}
+section.rates .white-block table .second
+{
+    top: initial;
+    right: -102px;
+    bottom: 30px;
+    left: initial; 
+
+    width: 332px;
+}
+section.rates .white-block table .second::after
+{
+    top: 108%;
+    right: initial;
+    bottom: initial;
+    left: 65%;
+}
+section.rates .white-block table .third
+{
+    top: initial;
+    right: -102px;
+    bottom: 30px;
+    left: initial; 
+
+    width: 365px;
+}
+section.rates .white-block table .third::after
+{
+    top: 105%;
+    right: initial;
+    bottom: initial;
+    left: 68%;
 }
 section.rates form p
 {
@@ -992,7 +1094,7 @@ section.rates form input[type='text']
     padding: 10px; 
 
     border: 1px solid #999;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, .5);
 }
 section.rates form input[type='submit']
@@ -1157,7 +1259,7 @@ section.free-consultation form .wrapper div.flex input[type='text']
     padding: 10px;
 
     border: 1px solid white;
-    border-radius: 2px;
+    border-radius: 10px;
     background: transparent;
 }
 section.free-consultation form .wrapper div.flex input[type='submit']
@@ -1920,7 +2022,7 @@ section.question .flex form button
     padding: 10px;
 
     border: 1px solid white;
-    border-radius: 2px;
+    border-radius: 10px;
     background: transparent;
 }
 section.question .flex form textarea
@@ -1992,6 +2094,7 @@ section.question .flex form a.button
     height: 35px;
 
     color: #fff;
+    border-radius: 10px;
     background-image: linear-gradient(to top, #0380b3 0%, #0380b3 20%, #01a8ec 81%, #01a8ec 100%);
 }
 section.question .flex form a.button span
@@ -2167,7 +2270,7 @@ footer div.company
     padding: 10px; 
 
     border: 1px solid #000;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, .5);
 }
 .form-specialist form input[type='submit']
