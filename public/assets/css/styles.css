@@ -251,14 +251,16 @@ section.slider
     background: url('/assets/img/slider-bg.png') no-repeat;
     background-position: 52% 0;
 }
-section.slider h2
+section.slider h1
 {
+    font-size: 36px;
+
     padding-top: 90px;
     padding-left: 70px; 
 
     color: #1b5bbb;
 }
-section.slider h2 img
+section.slider h1 img
 {
     position: relative;
     top: 7px;
@@ -540,7 +542,7 @@ section.introduction .complex
 {
     width: 700px;
     margin: auto;
-    padding: 90px 0 120px;
+    padding: 90px 0 40px;
 }
 section.introduction .complex h2
 {
