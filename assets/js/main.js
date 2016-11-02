@@ -69,21 +69,21 @@ $(function() {
       e.preventDefault();
       $("#collapsePortfolioFirst .item:hidden").slice(0, 1).slideDown();
       if ($("#collapsePortfolioFirst .item:hidden").length == 0) {
-          $("button.see").hide();
+          $("button.first").hide();
       }
   });
   $("button.see, button.second").on('click', function (e) {
       e.preventDefault();
       $("#collapsePortfolioSecond .item:hidden").slice(0, 1).slideDown();
       if ($("#collapsePortfolioSecond .item:hidden").length == 0) {
-          $("button.see").hide();
+          $("button.second").hide();
       }
   });
   $("button.see, button.third").on('click', function (e) {
       e.preventDefault();
       $("#collapsePortfolioThird .item:hidden").slice(0, 1).slideDown();
       if ($("#collapsePortfolioThird .item:hidden").length == 0) {
-          $("button.see").hide();
+          $("button.third").hide();
       }
   });
   //Calculator
