@@ -27,10 +27,10 @@ html(lang="ru")
 							a(href="#how-working") Схема работы
 						li
 							a(href="#portfolio") Отзывы
-						li 
+						li
 							a(href="#team") О компании
 						li
-							a(href="#certificate") Сертификаты 
+							a(href="#certificate") Сертификаты
 						li
 							a(href="#faq") FAQ
 						li
@@ -86,7 +86,7 @@ html(lang="ru")
 						p Гарантия выполнения работ в срок
 		section.introduction
 			.wrapper
-				h1 Внедрям 1С
+				h1 Внедряем 1С
 				.flex
 					.block.i-1.flex
 						div.item
@@ -111,46 +111,50 @@ html(lang="ru")
 						.products
 							p.h2 Цены 1С: Предприятие 1
 							.row.flex
-								.product
+								.product.product-with-calc
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-first-1")
-										input.calculator(type="chekbox" id="product-first-1" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-first-1") Выбрать
+										input.calculator(type="radio" id="product-first-1" data-value="3300" name="calculator")
 									.item
 										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-first-2") Выбрать
+										input.calculator(type="radio" id="product-first-2" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-first-3") Выбрать
+										input.calculator(type="radio" id="product-first-3" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
 								.product
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-first-2")
-										input.calculator(type="chekbox" id="product-first-2" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-first-4") Выбрать
+										input.calculator(type="radio" id="product-first-4" data-value="3300" name="calculator")
 									.item
-										h3 1С:Розница 8. Базовая версия
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-first-3")
-										input.calculator(type="chekbox" id="product-first-3" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-first-4")
-										input.calculator(type="chekbox" id="product-first-5" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
 						.flex
 							.complex
 								h2 Поможем комплексно подойти к решению Ваших задач
@@ -163,69 +167,79 @@ html(lang="ru")
 										p Дополнительные печатные формы
 										p Предпроектное обследование
 									div.price
-										p от 4 800 Р—
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-second-5" name="calculator--additional")
-										p от 2 400 Р—
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-second-5" name="calculator--additional")
-										p от 4 800 Р—
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-second-5" name="calculator--additional")
-										p от 12 000 Р—
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-second-5" name="calculator--additional")
-										p от 2 400 Р—
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-second-5" name="calculator--additional")
-										p от 1 600 Р—
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-second-5" name="calculator--additional")
+										p от 4 800 Р
+											input.calculator(type="checkbox" data-value="4800")
+										p от 2 400 Р
+											input.calculator(type="checkbox" data-value="2400")
+										p от 4 800 Р
+											input.calculator(type="checkbox" data-value="4800")
+										p от 12 000 Р
+											input.calculator(type="checkbox" data-value="12000")
+										p от 2 400 Р
+											input.calculator(type="checkbox" data-value="2400")
+										p от 1 600 Р
+											input.calculator(type="checkbox" data-value="1600")
+						.flex
+							.total-price
+								strong Итого:
+								span.total-price__value 0
+								small.icon-ruble
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя" required)
-								input(type="text" placeholder="Телефон" required)
-								input(type="text" placeholder="Email" required)
+								input(type="text"  name="name" placeholder="Имя" required)
+								input(type="text" 	 name="phone" placeholder="Телефон" required)
+								input(type="text" name="email" placeholder="Email" required)
+								input.total-input( name="total" type="hidden" value="")
 								input(type="submit" value="Заказать консультацию" required)
 					#collapseSecond.collapse
 						.products
 							p.h2 Цены 1С: Предприятие 2
 							.row.flex
-								.product
+								.product.product-with-calc
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-second-1")
-										input.calculator(type="radio" id="product-second-2" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-first-1") Выбрать
+										input.calculator(type="radio" id="product-second-1" data-value="3300" name="calculator")
 									.item
 										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-second-2") Выбрать
+										input.calculator(type="radio" id="product-second-2" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-second-3") Выбрать
+										input.calculator(type="radio" id="product-second-3" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
 								.product
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-second-2")
-										input.calculator(type="radio" id="product-second-2" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-second-4") Выбрать
+										input.calculator(type="radio" id="product-second-4" data-value="3300" name="calculator")
 									.item
-										h3 1С:Розница 8. Базовая версия
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-second-3")
-										input.calculator(type="radio" id="product-second-2" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-second-4")
-										input.calculator(type="radio" id="product-second-2" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
 						.flex
 							.complex
 								h2 Поможем комплексно подойти к решению Ваших задач
@@ -239,68 +253,78 @@ html(lang="ru")
 										p Предпроектное обследование
 									div.price
 										p от 4 800 Р
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-1" name="calculator--additional")
+											input.calculator(type="checkbox" data-value="4800")
 										p от 2 400 Р
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-2" name="calculator--additional")
+											input.calculator(type="checkbox" data-value="2400")
 										p от 4 800 Р
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-3" name="calculator--additional")
+											input.calculator(type="checkbox" data-value="4800")
 										p от 12 000 Р
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-4" name="calculator--additional")
+											input.calculator(type="checkbox" data-value="12000")
 										p от 2 400 Р
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-5" name="calculator--additional")
+											input.calculator(type="checkbox" data-value="2400")
 										p от 1 600 Р
-											input.calculator(type="checkbox" data-value="100" id="calculator--additional-6" name="calculator--additional")
+											input.calculator(type="checkbox" data-value="1600")
+						.flex
+							.total-price
+								strong Итого:
+								span.total-price__value 0
+								small.icon-ruble
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя" required)
-								input(type="text" placeholder="Телефон" required)
-								input(type="text" placeholder="Email" required)
-								input(type="submit" value="Заказать консультацию")
+								input(type="text"  name="name" placeholder="Имя" required)
+								input(type="text" 	 name="phone" placeholder="Телефон" required)
+								input(type="text" name="email" placeholder="Email" required)
+								input.total-input( name="total" type="hidden" value="")
+								input(type="submit" value="Заказать консультацию" required)
 					#collapseThird.collapse
 						.products
 							p.h2 Цены 1С: Предприятие 3
 							.row.flex
-								.product
+								.product.product-with-calc
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-third-1")
-										input(type="chekbox" id="product-third-1" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-third-1") Выбрать
+										input.calculator(type="radio" id="product-third-1" data-value="3300" name="calculator")
 									.item
 										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-third-2") Выбрать
+										input.calculator(type="radio" id="product-third-2" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-third-3") Выбрать
+										input.calculator(type="radio" id="product-third-3" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
 								.product
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-third-2")
-										input(type="chekbox" id="produc-third-2" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-third-4") Выбрать
+										input.calculator(type="radio" id="product-third-4" data-value="3300" name="calculator")
 									.item
-										h3 1С:Розница 8. Базовая версия
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-third-3")
-										input(type="chekbox" id="produc-third-3" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product-third-4")
-										input(type="chekbox" id="produc-third-4" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
 						.flex
 							.complex
 								h2 Поможем комплексно подойти к решению Ваших задач
@@ -313,63 +337,79 @@ html(lang="ru")
 										p Дополнительные печатные формы
 										p Предпроектное обследование
 									div.price
-										p от 4 800 Р—
-										p от 2 400 Р—
-										p от 4 800 Р—
-										p от 12 000 Р—
-										p от 2 400 Р—
-										p от 1 600 Р—
+										p от 4 800 Р
+											input.calculator(type="checkbox" data-value="4800")
+										p от 2 400 Р
+											input.calculator(type="checkbox" data-value="2400")
+										p от 4 800 Р
+											input.calculator(type="checkbox" data-value="4800")
+										p от 12 000 Р
+											input.calculator(type="checkbox" data-value="12000")
+										p от 2 400 Р
+											input.calculator(type="checkbox" data-value="2400")
+										p от 1 600 Р
+											input.calculator(type="checkbox" data-value="1600")
+						.flex
+							.total-price
+								strong Итого:
+								span.total-price__value 0
+								small.icon-ruble
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя" required)
-								input(type="text" placeholder="Телефон" required)
-								input(type="text" placeholder="Email" required)
-								input(type="submit" value="Заказать консультацию")
+								input(type="text"  name="name" placeholder="Имя" required)
+								input(type="text" 	 name="phone" placeholder="Телефон" required)
+								input(type="text" name="email" placeholder="Email" required)
+								input.total-input( name="total" type="hidden" value="")
+								input(type="submit" value="Заказать консультацию" required)
 					#collapseFourth.collapse
 						.products
 							p.h2 Цены 1С: Предприятие 4
 							.row.flex
-								.product
+								.product.product-with-calc
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product4")
-										input(type="chekbox" id="product-fourth-1" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-fourth-1") Выбрать
+										input.calculator(type="radio" id="product-fourth-1" data-value="3300" name="calculator")
 									.item
 										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-fourth-2") Выбрать
+										input.calculator(type="radio" id="product-fourth-2" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-fourth-3") Выбрать
+										input.calculator(type="radio" id="product-fourth-3" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
 								.product
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product2")
-										input(type="chekbox" id="product-fourth-2" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-fourth-4") Выбрать
+										input.calculator(type="radio" id="product-fourth-4" data-value="3300" name="calculator")
 									.item
-										h3 1С:Розница 8. Базовая версия
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product2")
-										input(type="chekbox" id="product-fourth-3" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product2")
-										input(type="chekbox" id="product-fourth-4" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
 						.flex
 							.complex
 								h2 Поможем комплексно подойти к решению Ваших задач
@@ -382,63 +422,79 @@ html(lang="ru")
 										p Дополнительные печатные формы
 										p Предпроектное обследование
 									div.price
-										p от 4 800 Р—
-										p от 2 400 Р—
-										p от 4 800 Р—
-										p от 12 000 Р—
-										p от 2 400 Р—
-										p от 1 600 Р—
+										p от 4 800 Р
+											input.calculator(type="checkbox" data-value="4800")
+										p от 2 400 Р
+											input.calculator(type="checkbox" data-value="2400")
+										p от 4 800 Р
+											input.calculator(type="checkbox" data-value="4800")
+										p от 12 000 Р
+											input.calculator(type="checkbox" data-value="12000")
+										p от 2 400 Р
+											input.calculator(type="checkbox" data-value="2400")
+										p от 1 600 Р
+											input.calculator(type="checkbox" data-value="1600")
+						.flex
+							.total-price
+								strong Итого:
+								span.total-price__value 0
+								small.icon-ruble
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя" required)
-								input(type="text" placeholder="Телефон" required)
-								input(type="text" placeholder="Email" required)
-								input(type="submit" value="Заказать консультацию")
+								input(type="text"  name="name" placeholder="Имя" required)
+								input(type="text" 	 name="phone" placeholder="Телефон" required)
+								input(type="text" name="email" placeholder="Email" required)
+								input.total-input( name="total" type="hidden" value="")
+								input(type="submit" value="Заказать консультацию" required)
 					#collapseFifth.collapse
 						.products
 							p.h2 Цены 1С: Предприятие 5
 							.row.flex
-								.product
+								.product.product-with-calc
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product5")
-										input(type="chekbox" id="product-fifth-1" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-fifth-1") Выбрать
+										input.calculator(type="radio" id="product-fifth-1" data-value="3300" name="calculator")
 									.item
 										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-fifth-2") Выбрать
+										input.calculator(type="radio" id="product-fifth-2" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
+								.product.product-with-calc
+									img(src="assets/img/product-1.png", alt="")
+									section.calculator-wrapper
+										label(for="product-fifth-3") Выбрать
+										input.calculator(type="radio" id="product-fifth-3" data-value="3300" name="calculator")
+									.item
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
+										p.cost 3300
+											i.icon-ruble
 								.product
 									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product2")
-										input(type="chekbox" id="product-fifth-2" data-value="3000" name="calculator")
+									section.calculator-wrapper
+										label(for="product-fifth-4") Выбрать
+										input.calculator(type="radio" id="product-fifth-4" data-value="3300" name="calculator")
 									.item
-										h3 1С:Розница 8. Базовая версия
+										h3 1С:Розница 8.<br> Базовая версия
+											span.question-mark ?
+												span.tooltiptext Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один
 										p.cost 3300
 											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product2")
-										input(type="chekbox" id="product-fifth-3" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
-								.product
-									img(src="assets/img/product-1.png", alt="")
-									section.calc-chekbox
-										label(for="product2")
-										input(type="chekbox" id="product-fifth-4" data-value="3000" name="calculator")
-									.item
-										h3 1С:Розница 8. Базовая версия
-										p.cost 3300
-											i.icon-ruble
-										p.description Программа «1С:Розница 8. Базовая версия» предназначена для автоматизации оперативного учета товаров и денежных средств в розничных торговых точках (магазинах), в которых с программой работает один <a href="">читать далее</a>
 						.flex
 							.complex
 								h2 Поможем комплексно подойти к решению Ваших задач
@@ -451,19 +507,31 @@ html(lang="ru")
 										p Дополнительные печатные формы
 										p Предпроектное обследование
 									div.price
-										p от 4 800 Р—
-										p от 2 400 Р—
-										p от 4 800 Р—
-										p от 12 000 Р—
-										p от 2 400 Р—
-										p от 1 600 Р—
+										p от 4 800 Р
+											input.calculator(type="checkbox" data-value="4800")
+										p от 2 400 Р
+											input.calculator(type="checkbox" data-value="2400")
+										p от 4 800 Р
+											input.calculator(type="checkbox" data-value="4800")
+										p от 12 000 Р
+											input.calculator(type="checkbox" data-value="12000")
+										p от 2 400 Р
+											input.calculator(type="checkbox" data-value="2400")
+										p от 1 600 Р
+											input.calculator(type="checkbox" data-value="1600")
+						.flex
+							.total-price
+								strong Итого:
+								span.total-price__value 0
+								small.icon-ruble
 						form.flex
 							p Заполните заявку и получите бесплатную консультацию специалиста<br> на которой мы поможем для Вас подобраться оптимальный вариант
 							div.flex
-								input(type="text" placeholder="Имя" required)
-								input(type="text" placeholder="Телефон" required)
-								input(type="text" placeholder="Email" required)
-								input(type="submit" value="Заказать консультацию")
+								input(type="text"  name="name" placeholder="Имя" required)
+								input(type="text" 	 name="phone" placeholder="Телефон" required)
+								input(type="text" name="email" placeholder="Email" required)
+								input.total-input( name="total" type="hidden" value="")
+								input(type="submit" value="Заказать консультацию" required)
 		section.guarantee#guarantee
 			.wrapper
 				h1 Мы гарантируем
@@ -540,7 +608,7 @@ html(lang="ru")
 							.block.flex.block-first
 								.block-item
 									h2.name Глеб, Программист
-									p Опыт работы: 
+									p Опыт работы:
 										span 1 год
 									p Обзарование:<br>
 										span Высшее (Бакалавр – Прикладная математика и информатика).
@@ -548,9 +616,9 @@ html(lang="ru")
 										span 4 месяца
 									p Специализация:<br>
 										span заработная плата и кадровый учет, сложные технические разработки (доработка конфигураций, написание программного кода).
-									p	Знания по конфигурациям:<br>
+									p Знания по конфигурациям:<br>
 										span 1С Управление производственным предприятием 1.3; Управление торговлей 10.3/11.2; Бухгалтерия 2.0/3.0; Управление небольшой фирмой 1.5.
-									p О себе:<br> 
+									p О себе:<br>
 										span Молодой перспективный специалист.Целеустремленный‚ ответственный‚ креативный‚ имею стремление к профессиональному развитию и обучению‚ не курю, довожу дело до конца.
 									div.image
 										a.grouped_elements(href="assets/img/certificate/first/certificate-1.png" rel="group1")
@@ -567,15 +635,15 @@ html(lang="ru")
 							.block.flex.block-second
 								.block-item
 									h2.name Али, Сервис-инженер.
-									p Опыт работы: 
+									p Опыт работы:
 										span с 2013 г.
-									p 
+									p
 										span За время работы получил солидный опыт в сопровождение программных продуктов 1С.
-									p 
+									p
 										span Работа на 1-й линии клиентской поддержки способствовала получению необходимых навыков для консультирования пользователей 1С по ведению учёта, настройки программных продуктов под требования клиентов.
-									p 
+									p
 										span Успешное внедрение сервисов 1С ИТС доказано полученным статусом нашей организации - "Сертифицированный сервисный партнёр 1С".
- 
+
 									div.image
 										a.grouped_elements(href="assets/img/certificate/second/certificate-1.png" rel="group2")
 											img(src="assets/img/certificate/second/certificate-1.png", alt="")
@@ -591,15 +659,15 @@ html(lang="ru")
 							.block.flex.block-third
 								.block-item
 									h2.name Сергей, Программист 1С
-									p Опыт работы: 
+									p Опыт работы:
 										span 9 месяцев
-									p 
+									p
 										span Специализируется на 1С управлении торговлей. Отлично разбирается в управленческом учете.
 									p Средняя продолжительность ведения проектов:<br>
 										span 3 месяца
 									p Специализация:<br>
 										span Управление торговлей (доработка конфигураций, написание программного кода).
-									p О себе:<br> 
+									p О себе:<br>
 										span Ценю время свое и клиента. Если берусь за дело, то довожу до конца.
 									div.image
 										a.grouped_elements(href="assets/img/certificate/third/certificate-1.png" rel="group3")
@@ -616,7 +684,7 @@ html(lang="ru")
 							.block.flex.block-fourth
 								.block-item
 									h2.name Андрей, Программист
-									p Опыт работы: 
+									p Опыт работы:
 										span 1 год
 									p Средняя продолжительность ведения проектов:<br>
 										span 3 месяца
@@ -624,7 +692,7 @@ html(lang="ru")
 										span управленческий и регламентированный учет, сложные технические разработки (доработка конфигураций, написание программного кода).
 									p Знания по конфигурациям:
 										span 1С Управление производственным предприятием 1.3; Управление торговлей 10.3/11.2; Бухгалтерия 2.0/3.0; Управление небольшой фирмой 1.5.
-									p О себе:<br> 
+									p О себе:<br>
 										span Образование: Высшее (Бакалавр – Инженер автоматизации, Магистр – прикладная информатика).<br>Работаю на качество. Всегда пытаюсь увидеть проблему глазами клиента. Решаю задачи не в "лоб".
 									div.image
 										a.grouped_elements(href="assets/img/certificate/fourth/certificate-1.png" rel="group4")
@@ -641,11 +709,11 @@ html(lang="ru")
 							.block.flex.block-fifth
 								.block-item
 									h2.name Елена, Сертифицированный специалист по сопровождению
-									p Опыт работы: 
+									p Опыт работы:
 										span с 2016 г.
 									p  Сертифицированный специалист по сопровождению:<br>
 										span обеспечение функционирования базы 1С у клиентов и обновление программных продуктов, оперативная поддержка пользователей, в т.ч. консультирование клиентов по работе в программе 1С.
-									p О себе:<br> 
+									p О себе:<br>
 										span Всегда нужно внедрять в работу то, что любишь.
 									div.image
 										a.grouped_elements(href="assets/img/certificate/fifth/certificate-1.png" rel="group5")
@@ -662,7 +730,7 @@ html(lang="ru")
 							.block.flex.block-sixth
 								.block-item
 									h2.name Алексей, 1С программист
-									p Опыт работы: 
+									p Опыт работы:
 										span 1.5 года
 									p Обзарование:<br>
 										span Высшее (Бакалавр – Инженер автоматизации).
@@ -670,7 +738,7 @@ html(lang="ru")
 										span 3 месяца
 									p Специализация:<br>
 										span Управление торговлей (доработка конфигураций, написание программного кода).
-									p О себе:<br> 
+									p О себе:<br>
 										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
 									div.image
 										a.grouped_elements(href="assets/img/certificate/sixth/certificate-1.png" rel="group6")
@@ -687,7 +755,7 @@ html(lang="ru")
 							.block.flex.block-seventh
 								.block-item
 									h2.name Алексей, 1С программист
-									p Опыт работы: 
+									p Опыт работы:
 										span 1.5 года
 									p Обзарование:<br>
 										span Высшее (Бакалавр – Инженер автоматизации).
@@ -695,7 +763,7 @@ html(lang="ru")
 										span 3 месяца
 									p Специализация:<br>
 										span Управление торговлей (доработка конфигураций, написание программного кода).
-									p О себе:<br> 
+									p О себе:<br>
 										span Внимательный, пунктуальный, ответственный, всегда довожу начатое до конца, ценю время как свое так и клиента.
 									div.image
 										a.grouped_elements(href="assets/img/certificate/seventh/certificate-1.png" rel="group7")
@@ -991,7 +1059,7 @@ html(lang="ru")
 								p Настройка обмена данными между 1С Бухгалтерий, ЗУП, КАМИН, УТ, Банк-клиентом
 								p Перевод программ с платформы 8.1 на 8.2
 								p Создание уникальных ценовых и количественных характеристик товаров
-							.item 	
+							.item
 								h2 Автоматизация торговой фирмы «Партнер Поволжье»
 								a(href="http://www.grand-toys.ru/" target="_blank") http://www.grand-toys.ru/
 								a(href="http://игрушки.рф/") http://игрушки.рф/
@@ -999,7 +1067,7 @@ html(lang="ru")
 								p Наша компания занималась внедрением программного решения КАМИН:Зарплата для бизнеса. Версия 4.0 ПРОФ. Был выполнен полный перенос данных из предыдущей версии программы КАМИН:Расчет заработной платы 2.0. Отладка корректной работы программы по всем юр.лицам и сотрудникам.
 								p Произведено более 100 доработок для отдела кадров, расчетного отдела, ОтиЗ и т.д.
 							.item
-								h2	Автоматизация торговой сети «Здоровит»
+								h2 Автоматизация торговой сети «Здоровит»
 								a(href="http://www.zdorovit.ru/" target="_blank") http://www.zdorovit.ru/
 								p.description Продажа продукции здорового питания. Филиалы торговой сети находятся в крупных торговых центрах городов Самара и Тольятти.
 								p Для розничной сети внедрен комплект из решений «1С:Управление Торговлей 8» и «1С:Бухгалтерия 8». Произведена настройка обмена между УТ и БП. В конфигурации были настроены различные системы скидок, настроено торговое оборудование. Выполняется консультирование клиента по вопросам работы в программе.
@@ -1028,7 +1096,7 @@ html(lang="ru")
 							.item
 								h2 Автоматизация филиалов сети магазинов «Forward»
 								a(href="http://www.forward-sport.ru/" target="_blank") http://www.forward-sport.ru/
-								p.descriptionРеализация спортивной одежды марки «Forward».
+								p.description Реализация спортивной одежды марки «Forward».
 								p С целью автоматизации торгового бизнеса к нам обратилась фирма только планирующая открытие сети магазинов спортивной одежды марки «Forward» в городе Тольятти.
 								p Проведя Экспресс-анализ фирмы и установив конечные цели автоматизации, нашей компанией было предложено несколько вариантов для автоматизации торгового бизнеса. Для компании заказчика было подобрано оборудование и программное обеспечение, а также была представлена полная смета предстоящих затрат на автоматизацию сети из двух магазинов.
 								p Для автоматизации торгового бизнеса компания заказчик выбрал программное решение «1С:Розница 8». Данное программное решение было доставлено и установлено в двух магазинах фирменной одежды "Forward". Было подключено и настроено торговое оборудование: сканеры штрих-кода, ридеры магнитных карт, чековые принтеры.
@@ -1043,16 +1111,16 @@ html(lang="ru")
 								a(href="#portfolio-form").order.fancy Хочу такой же результат
 					#second.tab-pane.fade.all-works(role="tabpanel")
 						.item
-							h2	Автоматизация производственной компании «БетонМобил»
+							h2 Автоматизация производственной компании «БетонМобил»
 							a(href="http://betonmobil.ru/" target="_blank") http://betonmobil.ru/
 							p.description Производство бетона высокого качества.
 							p Внедрение «1С:Бухгалтерии 8» с интеграцией производственной программы L-Express для рецептур и отгрузки на БРУ.
 							p В компании установлены следующие программные продукты:
 							p «1С:Бухгалтерия 8 ПРОФ»
 							p «1С:Зарплата и Управление Персоналом 8».
-							p Специалистами ООО «Виват Интеллект» был настроен бухгалтерский, налоговый учет. Выполнена настройка обмена данными бухгалтерской и зарплатной программы. Было выполнено создание уникальной обработки, позволяющей обмениваться данными с применяемым на производстве программно-аппаратным комплексом БРУ L-Express в режиме on-line. 
+							p Специалистами ООО «Виват Интеллект» был настроен бухгалтерский, налоговый учет. Выполнена настройка обмена данными бухгалтерской и зарплатной программы. Было выполнено создание уникальной обработки, позволяющей обмениваться данными с применяемым на производстве программно-аппаратным комплексом БРУ L-Express в режиме on-line.
 						.item
-							h2	Автоматизация производства запчастей в «Спец-Автопласт»
+							h2 Автоматизация производства запчастей в «Спец-Автопласт»
 							a(href="http://www.sp-avtoplast.ru/" target="_blank") http://www.sp-avtoplast.ru/
 							p.description Компания «Спец-Автопласт» занимается производством и оптово-розничной торговлей запчастями.
 							p  В организации используется 1С:Производство и 1С:Бухгалтерия. Нашими специалистами был полностью автоматизирован процесс учета на производстве и продаже автозапчастей. Был осуществлен ряд специфических доработок в программы по заданиям заказчика. Было подключено и настроено специальное оборудование сканеры штрих-кодов и Терминалы сбора данных, облегчающие учет поступления, производства и отгрузки в организации.
@@ -1106,7 +1174,7 @@ html(lang="ru")
 								p Создание обработок, позволяющих формировать отчеты в соответствии с пожеланиями заказчика
 								p Внедрение ордерного склада с помещениями и складскими ячейками с использованием серий (для контроля даты изготовления продукции).
 								p Настройка политики наполняемости складских ячеек по видам товара и габаритам.
-								p Создание обработки по отбору товара  из ячеек с учетом серий. 
+								p Создание обработки по отбору товара  из ячеек с учетом серий.
 						footer.flex
 							button.see.second Показать еще работы
 							div
@@ -1147,7 +1215,7 @@ html(lang="ru")
 		section.review
 			.wrapper.flex
 				.block
-					p Создавая свою компанию ВИВАТ ИНТЕЛЛЕКТ в 2008 году, я стремился к формированию круга единомышленников, объединенных одной идеей - разработкой и сопровождением 1С в самых комфортных для специалиста и клиента условиях. 
+					p Создавая свою компанию ВИВАТ ИНТЕЛЛЕКТ в 2008 году, я стремился к формированию круга единомышленников, объединенных одной идеей - разработкой и сопровождением 1С в самых комфортных для специалиста и клиента условиях.
 					p Это позволяет совместно развиваться и получать заряд энергии от победы в результате каждой задачи, эйфории от удовлетворения результатом клиента для следующих побед. Каждая победа должна быть вознаграждена!
 					a(href="#director").fancy читать далее
 		section.certificate#certificate
@@ -1200,7 +1268,7 @@ html(lang="ru")
 								| Кому мы не подходим
 					#collapseSix.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
 						.panel-body
-							| Мы обговариваем сроки реализации проекта и четко их соблюдаем, выдаем 3-х летнюю гарантию на выполненные работы и дарим доп. часы программиста. Вам подходит этот вариант - <a class="fancy" href="#faq-form">заполните заявку</a> на бесплатную консультацию 
+							| Мы обговариваем сроки реализации проекта и четко их соблюдаем, выдаем 3-х летнюю гарантию на выполненные работы и дарим доп. часы программиста. Вам подходит этот вариант - <a class="fancy" href="#faq-form">заполните заявку</a> на бесплатную консультацию
 							p Если вы хотите долго, очень дешево, без реальных гарантий -  обратитесь к фрилансерам.
 		section.contact#contact.flex
 			#YMapsID(style="width: 100%; height: 400px;")
@@ -1209,16 +1277,16 @@ html(lang="ru")
 					h2 Контактные информация
 					p.ooo ООО «ИНТЭС групп»
 					.flex.adress
-						p Адрес:      
+						p Адрес:
 						p Тольятти, улица Спортивная,<br> д. 6, подъезд 2/2, 5 этаж
 					.flex.work
-						p Режим работы: 
+						p Режим работы:
 						p с 9:00 до 18:00
 					.flex.phone
 						p Телефоны:
 						p +7 (8482) 55-73-98
 					.flex.email
-						p E-mail:     
+						p E-mail:
 						p
 							a(href="#") info@vivat-iq.ru
 		section.question
@@ -1234,7 +1302,7 @@ html(lang="ru")
 						input(type="text" placeholder="Email" required)
 						input(type="text" placeholder="Телефон" required)
 						button(type="button")
-						a.button 
+						a.button
 							span обзор
 						input(type="file" placeholder="Файл")
 						textarea(placeholder="Сообщение" required)
@@ -1247,17 +1315,18 @@ html(lang="ru")
 				div.email
 					p Вопросы и пожелания<br>отправляйте на <a href="#">info@vivat-iq.ru</a>
 				div.company
-					p Компания разработчик 
+					p Компания разработчик
 					a(href="http://lidkom.ru/") Lidkom.ru
 		//Header
 		div.form-specialist#header(style="display: none")
 			form.flex
+					h3.popup-header Заказать звонок
 					div.flex
 						input(type="text" placeholder="Имя" required)
 						input(type="text" placeholder="Телефон" required)
 						input(type="text" placeholder="Email" required)
-					input(type="submit" value="Заказать консультацию")
-		//Specilist 
+					input(type="submit" value="Отправить")
+		//Specilist
 		div.form-specialist#specialist-1(style="display: none")
 			form.flex
 					div.flex
@@ -1290,12 +1359,12 @@ html(lang="ru")
 				div.image
 					img(src="assets/img/general.png", alt="")
 			p Для моей компании важно совершенствование философии управления и ведения современного бизнеса путем внедрения новейших технологических решений и их сопровождения.
-			p Акцентирую внимание на анализе существующей системы планирования и учета компании при желании сделать эту систему более эффективной. 
+			p Акцентирую внимание на анализе существующей системы планирования и учета компании при желании сделать эту систему более эффективной.
 			p Ценю в работе: упорство на пути к улучшениям, умение слушать и рационально решать задачи.
 			p Лучшая гарантия VIVAT IQ это УНИКАЛЬНАЯ КУЛЬТУРА СОПРОВОЖДЕНИЯ 1С, над совершенствованием которой я постоянно работаю: обучение, оптимизация внутренних бизнес-процессов, тестирование и демонстрация собственных примеров “как у нас”, повышение лояльности к любым клиентам без деления на категории и объемы, ускорение бюрократических процедур и быстрое решение возникающих потребностей.
 			p Наш клиент зарабатывает и становится успешным, потому что не тратил свое время на ненужную работу, требуемые документы, анализ данных и т д., а внедрял с VIVAT IQ возможности в 1С, которые нужны именно его бизнесу, чтобы повысить качество работы с клиентами, поставщиками и сотрудниками.
 			p Управление проектами, основанное на своем опыте экономит время и бюджет клиента. Главная задача - найти эффективное и выгодное решение для клиента, сделать каждый проект уникальным.
-			p Я лично участвую в процессе и могу Вам помочь в решении вопросов, которые стоят в самом начале бизнеса либо когда уже все "уже настроено", но требуется реструктуризировать компанию, отделы, в сложной автоматизации при постановке вопроса по планированию и учету в казначействе и бюджетировании, когда появляется необходимость выходить на ВЭД, отчитываться по МСФО, а ранее был только РСБ, когда есть потребность усовершенствовать учет внутри производства: перейти от старого учета к новому: планировать,  ускорить исполнение, проконтролировать, делать больше за то же время и с прежними ресурсами. 
+			p Я лично участвую в процессе и могу Вам помочь в решении вопросов, которые стоят в самом начале бизнеса либо когда уже все "уже настроено", но требуется реструктуризировать компанию, отделы, в сложной автоматизации при постановке вопроса по планированию и учету в казначействе и бюджетировании, когда появляется необходимость выходить на ВЭД, отчитываться по МСФО, а ранее был только РСБ, когда есть потребность усовершенствовать учет внутри производства: перейти от старого учета к новому: планировать,  ускорить исполнение, проконтролировать, делать больше за то же время и с прежними ресурсами.
 			p Желаю Вам и Вашему бизнесу благосостояния и преуспевания!
 
 

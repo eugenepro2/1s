@@ -505,7 +505,7 @@ section.introduction .products .row .product img
 section.introduction .products .row .product .item
 {
     margin-top: 22px;
-    padding: 40px 25px; 
+    padding: 25px; 
 
     background: #e6e6e6;
 }
@@ -521,7 +521,7 @@ section.introduction .products .row .product .item .cost
     font-family: 'GothamProBold';
     font-size: 24px;
 
-    padding: 30px 0 20px; 
+    padding: 20px 0 0; 
 
     text-align: center;
 
@@ -542,7 +542,7 @@ section.introduction .complex
 {
     width: 700px;
     margin: auto;
-    padding: 90px 0 40px;
+    padding: 90px 0 10px;
 }
 section.introduction .complex h2
 {
@@ -2273,7 +2273,6 @@ footer div.company
 .form-specialist
 {
     width: 600px;
-    height: 115px;
 }
 .form-specialist form
 {
@@ -2295,7 +2294,7 @@ footer div.company
     margin: auto;
     padding: 10px; 
 
-    border: 1px solid #000;
+    border: 1px solid #999;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, .5);
 }
@@ -2307,7 +2306,7 @@ footer div.company
 
     width: 220px;
     margin: 20px auto;
-    padding: 10px 16px 12px 16px;
+    padding: 10px 16px 9px 16px;
 
     color: #fff;
     border: 0 solid; 
@@ -2332,4 +2331,73 @@ footer div.company
 
     color: #fff;
     background: #1194ca;
+}
+
+.fancybox-inner
+{
+    overflow: hidden !important;
+}
+
+.popup-header
+{
+    padding: 20px; 
+
+    text-align: center;
+}
+
+.calculator-wrapper
+{
+    padding: 10px;
+
+    cursor: pointer; 
+    text-align: center;
+}
+
+.total-price
+{
+    font-size: 50px;
+
+    display: block;
+
+    margin: auto; 
+
+    text-align: center;
+}
+.total-price strong
+{
+    padding-right: 20px;
+}
+.total-price small
+{
+    padding-left: 20px;
+}
+
+.products .question-mark
+{
+    line-height: 1.45; 
+
+    display: inline-block;
+
+    text-align: center;
+}
+.products .question-mark .tooltiptext
+{
+    top: 160%;
+    bottom: auto;
+    left: 25%;
+
+    width: 400px;
+    padding: 20px;
+
+    transform: translate(-50%, 0); 
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, .5);
+}
+.products .question-mark .tooltiptext:after
+{
+    top: auto;
+    bottom: 100%;
+    left: 50%;
+
+    transform: rotate(90deg);
 }

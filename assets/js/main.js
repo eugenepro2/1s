@@ -61,6 +61,15 @@ $(function() {
   	}
   });
 
+  //Calculator
+  $('.calculator').on('change', function(){
+    var sum = 0;
+    $('.calculator:visible:checked').each( function(index, item){
+      sum += $(item).data('value');
+    });
+    $('.total-price__value:visible').text(sum);
+    $('.total-input').val(sum);
+  });
 
 
 
@@ -85,14 +94,6 @@ $(function() {
       if ($("#collapsePortfolioThird .item:hidden").length == 0) {
           $("button.third").hide();
       }
-  });
-  //Calculator
-  $('.calculator:visible').on('change', function(){
-    var sum = 0;
-    $('.calculator:checked').each( function(index, item){
-      sum += $(item).data('value');
-    });
-    console.log(sum);
   });
 
 });
